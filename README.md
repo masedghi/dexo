@@ -4,6 +4,40 @@ Dexo is a standalone operations dashboard for stores using WooCommerce. It runs 
 
 [راهنمای فارسی](docs/install-fa.md) · [Downloads](https://github.com/masedghi/dexo/releases) · [Extend Dexo](docs/develop.md)
 
+## Screenshots
+
+Captured from Dexo running on a demo WooCommerce store with sample data.
+
+![Dexo desktop dashboard showing the order list, search, and status filters](https://raw.githubusercontent.com/masedghi/dexo/main/docs/screenshots/orders.png)
+
+<details>
+<summary>Order details and shipment tracking</summary>
+
+![Dexo order details showing items, status, packing slip, tracking, and internal notes](https://raw.githubusercontent.com/masedghi/dexo/main/docs/screenshots/order-detail.png)
+
+</details>
+
+<details>
+<summary>Product price and inventory</summary>
+
+![Dexo product page with separate forms for the regular price and stock quantity](https://raw.githubusercontent.com/masedghi/dexo/main/docs/screenshots/product-inventory.png)
+
+</details>
+
+<details>
+<summary>Persian mobile dashboard · نمای فارسی موبایل</summary>
+
+![فهرست سفارش‌های دیکسو روی موبایل با رابط فارسی و چیدمان راست‌به‌چپ](https://raw.githubusercontent.com/masedghi/dexo/main/docs/screenshots/orders-fa-mobile.png)
+
+</details>
+
+<details>
+<summary>Staff sign-in</summary>
+
+![Dexo sign-in page with username and password fields](https://raw.githubusercontent.com/masedghi/dexo/main/docs/screenshots/sign-in.png)
+
+</details>
+
 ## What you can do
 
 - Find orders by their internal ID or browse by status. Open order items, update standard WooCommerce statuses, add private notes, record a tracking code, and print a packing slip.
