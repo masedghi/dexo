@@ -73,7 +73,8 @@ def run(base, route, ids, admin_login, admin_password):
     assert "No orders found." in admin.panel(order=order, status="wc-completed")[0]
 
     customer = Browser(base, route)
-    assert "Access restricted" in customer.login("dexo_customer_test", allowed=False)[0]
+    assert "<h1>My account</h1>" in customer.login("dexo_customer_test")[0]
+    customer.panel(tab="orders", expect=404)
 
     warehouse = Browser(base, route)
     warehouse.login("dexo_warehouse_test")

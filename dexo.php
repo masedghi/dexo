@@ -3,7 +3,7 @@
  * Plugin Name: Dexo
  * Plugin URI: https://github.com/masedghi/dexo
  * Description: A standalone operations dashboard for WooCommerce orders, product inventory, and store teams.
- * Version: 0.3.0
+ * Version: 0.4.0
  * Requires at least: 6.8
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
@@ -19,7 +19,7 @@ namespace Dexo;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION = '0.3.0';
+const VERSION = '0.4.0';
 const FILE = __FILE__;
 
 require_once __DIR__ . '/includes/access.php';
@@ -27,6 +27,7 @@ require_once __DIR__ . '/includes/panel.php';
 require_once __DIR__ . '/includes/orders.php';
 require_once __DIR__ . '/includes/products.php';
 require_once __DIR__ . '/includes/content.php';
+require_once __DIR__ . '/includes/admin.php';
 
 register_activation_hook( FILE, __NAMESPACE__ . '\\install_roles' );
 add_action( 'init', static function (): void {

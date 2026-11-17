@@ -54,3 +54,11 @@ If a PHP process is force-killed mid-save and the record remains locked, check t
 Posts, pages, and attachments use the current user's native WordPress capabilities and record-level `edit_post` checks. The dedicated Dexo commerce roles do not grant content capabilities. Block-based content and custom HTML remain in the WordPress editor to preserve their structure.
 
 To verify these paths on a disposable local site, run `wp eval-file tests/content-fixture.php > /tmp/dexo-content.json`, then `python3 tests/content-smoke.py http://127.0.0.1:8892 /tmp/dexo-content.json`. Additional record-level checks run with `DX_CONTENT_FIXTURE=/tmp/dexo-content.json wp eval-file tests/content-checks.php`. Create new fixture records before repeating the tests.
+
+## Site-management checks
+
+On a disposable local WordPress site, `tests/admin-fixture.php` creates synthetic accounts and records for `tests/admin-smoke.py` and `tests/admin-checks.php`. Set `DX_ADMIN_FIXTURE` to the fixture JSON path when running the PHP checks. Use a fresh fixture before repeating the checks. For the disposable fixture site, copy `tests/admin-support.php` into its `wp-content/mu-plugins/` directory. It captures mail addressed to `@example.test`, registers the fixture menu location and adds paginated privacy callbacks in local environments. Remove this support file when the test run ends. The fixture and support files stay outside the installable Dexo ZIP. The HTTP checks cover settings, accounts, role boundaries, comments, terms, menus and privacy requests. The PHP checks cover navigation cycles, advanced-block preservation and privilege boundaries.
+
+Site Health shows environment details and local WordPress checks. The complete native Site Health screen also runs network-dependent checks.
+
+Profile and user-management endpoints consume only their explicit fields. Keep record-level WordPress capability checks in any extension that changes another user's data. Site settings use an explicit option schema, and privacy processing delegates to the native WordPress AJAX actions and plugin callbacks.

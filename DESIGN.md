@@ -1,6 +1,6 @@
 # Dexo design
 
-Dexo brings the visual system of the original store operations panel to a standalone WooCommerce plugin. The public interface uses the DEXO wordmark and the current store’s name. It covers orders, products, posts, pages, media, packing slips and sign-in. Content navigation follows native WordPress capabilities and uses the same list and record-dialog pattern.
+Dexo brings the visual system of the original store operations panel to a standalone WooCommerce plugin. The public interface uses the DEXO wordmark and the current store’s name. It covers commerce, content, site settings, users, personal profiles, navigation, site health, privacy, packing slips and sign-in. Content navigation follows native WordPress capabilities and uses the same list and record-dialog pattern.
 
 ## Visual tokens
 
@@ -26,3 +26,5 @@ Status badges use soft green for completed or in-stock, blue for processing, amb
 - Desktop sign-in pairs a sage brand panel with the native WordPress form on an off-white background. The Dexo stylesheet is scoped to logins that return to Dexo.
 
 The public plugin uses a local font and server-rendered views. Additive features should reuse the tokens and visible hierarchy described here. Keep navigation scoped to each user’s allowed sections, and show private order fields only when the existing capabilities allow them.
+
+Site management uses the shared card, form, checkbox, table and notice styles. Group these screens below content navigation. Profile forms show the current account, and permission-sensitive settings and operations appear only to eligible roles.

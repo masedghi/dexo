@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.3.0\n"
+"Project-Id-Version: Dexo 0.4.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,8 +10,14 @@ msgstr ""
 msgid "(Untitled)"
 msgstr "(بدون عنوان)"
 
+msgid "A static page"
+msgstr "یک برگهٔ ثابت"
+
 msgid "Access restricted"
 msgstr "دسترسی محدود است"
+
+msgid "Action"
+msgstr "عملیات"
 
 msgid "Activate WooCommerce to use the dashboard."
 msgstr "برای استفاده از پنل، ووکامرس را فعال کنید."
@@ -19,8 +25,20 @@ msgstr "برای استفاده از پنل، ووکامرس را فعال کن�
 msgid "Add an internal note"
 msgstr "نوشتن یادداشت داخلی"
 
+msgid "Add link"
+msgstr "افزودن لینک"
+
 msgid "Add note"
 msgstr "ثبت یادداشت"
+
+msgid "Add term"
+msgstr "افزودن دسته یا برچسب"
+
+msgid "Add user"
+msgstr "افزودن کاربر"
+
+msgid "All"
+msgstr "همه"
 
 msgid "All orders"
 msgstr "همهٔ سفارش‌ها"
@@ -31,11 +49,20 @@ msgstr "همهٔ محصولات"
 msgid "All statuses"
 msgstr "همهٔ وضعیت‌ها"
 
+msgid "Allow comments on new posts"
+msgstr "دیدگاه‌ها برای نوشته‌های جدید باز باشند"
+
+msgid "Allow search engines to index this site"
+msgstr "به موتورهای جست‌وجو اجازهٔ نمایه‌سازی سایت داده شود"
+
 msgid "Alternative text"
 msgstr "متن جایگزین تصویر"
 
 msgid "Amount"
 msgstr "مبلغ"
+
+msgid "An email confirmation is pending."
+msgstr "تغییر ایمیل در انتظار تأیید است."
 
 msgid "Another update changed this order. Review the current values and try again."
 msgstr "این سفارش در همین فاصله تغییر کرده است. مقادیر فعلی را بررسی کنید و دوباره تلاش کنید."
@@ -43,11 +70,29 @@ msgstr "این سفارش در همین فاصله تغییر کرده است. �
 msgid "Another update changed this product. Review the current values and try again."
 msgstr "این محصول در همین فاصله تغییر کرده است. مقادیر فعلی را بررسی کنید و دوباره تلاش کنید."
 
+msgid "Apply"
+msgstr "اعمال"
+
+msgid "Approve"
+msgstr "تأیید"
+
+msgid "Approved"
+msgstr "تأییدشده"
+
 msgid "Ask your store administrator to assign a Dexo role to your account."
 msgstr "از مدیر فروشگاه بخواهید یک نقش دیکسو به حساب شما بدهد."
 
+msgid "Assign menu"
+msgstr "تعیین جایگاه منو"
+
+msgid "Automatically close comments on old posts"
+msgstr "دیدگاه‌های نوشته‌های قدیمی خودکار بسته شوند"
+
 msgid "Back to order"
 msgstr "بازگشت به سفارش"
+
+msgid "Block navigation"
+msgstr "ناوبری بلوکی"
 
 msgid "Body (text or basic HTML)"
 msgstr "محتوا (متن یا HTML ساده)"
@@ -55,8 +100,17 @@ msgstr "محتوا (متن یا HTML ساده)"
 msgid "Caption"
 msgstr "کپشن"
 
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
 msgid "Changes saved."
 msgstr "تغییرات ذخیره شد."
+
+msgid "Classic menu"
+msgstr "فهرست کلاسیک"
+
+msgid "Close comments after this many days"
+msgstr "تعداد روز تا بسته‌شدن دیدگاه‌ها"
 
 msgid "Close details"
 msgstr "بستن جزئیات"
@@ -64,11 +118,56 @@ msgstr "بستن جزئیات"
 msgid "Close menu"
 msgstr "بستن فهرست"
 
+msgid "Comment author must fill out name and email"
+msgstr "نویسندهٔ دیدگاه باید نام و ایمیل وارد کند"
+
+msgid "Comment author must have a previously approved comment"
+msgstr "نویسندهٔ دیدگاه باید دیدگاه تأییدشدهٔ قبلی داشته باشد"
+
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+msgid "Comments must be manually approved"
+msgstr "دیدگاه‌ها باید دستی تأیید شوند"
+
+msgid "Complete all required fields."
+msgstr "فیلدهای لازم را تکمیل کنید."
+
+msgid "Confirm an allowed deletion."
+msgstr "حذف مجاز را تأیید کنید."
+
+msgid "Confirm deletion"
+msgstr "حذف را تأیید می‌کنم"
+
+msgid "Confirm new password"
+msgstr "تکرار رمز جدید"
+
+msgid "Confirm this privacy request before processing."
+msgstr "این درخواست حریم خصوصی باید پیش از پردازش تأیید شود."
+
+msgid "Confirm your email change"
+msgstr "تأیید تغییر ایمیل"
+
+msgid "Confirm your email change using this link:"
+msgstr "برای تأیید تغییر ایمیل، این لینک را باز کنید."
+
 msgid "Connected to your store"
 msgstr "متصل به فروشگاه"
 
 msgid "Content"
 msgstr "محتوا"
+
+msgid "Create menu"
+msgstr "ساخت فهرست"
+
+msgid "Create user and send setup email"
+msgstr "ساخت کاربر و ارسال ایمیل راه‌اندازی"
+
+msgid "Crop thumbnails to exact dimensions"
+msgstr "بند‌انگشتی‌ها با ابعاد دقیق بریده شوند"
+
+msgid "Current password (required for email or password changes)"
+msgstr "رمز فعلی (برای تغییر ایمیل یا رمز لازم است)"
 
 msgid "Customer"
 msgstr "مشتری"
@@ -76,8 +175,23 @@ msgstr "مشتری"
 msgid "Dashboard"
 msgstr "پنل"
 
+msgid "Database"
+msgstr "پایگاه داده"
+
 msgid "Date"
 msgstr "تاریخ"
+
+msgid "Date format"
+msgstr "قالب تاریخ"
+
+msgid "Default comment settings apply to new posts. Existing posts keep their own comment setting."
+msgstr "تنظیمات پیش‌فرض دیدگاه برای نوشته‌های جدید اعمال می‌شود. نوشته‌های موجود تنظیم خودشان را دارند."
+
+msgid "Delete term"
+msgstr "حذف دسته یا برچسب"
+
+msgid "Description"
+msgstr "توضیح"
 
 msgid "Details"
 msgstr "جزئیات"
@@ -94,11 +208,65 @@ msgstr "دیکسو · سفارش‌ها"
 msgid "Dexo · Warehouse"
 msgstr "دیکسو · انبار"
 
+msgid "Disallowed words (one per line)"
+msgstr "واژه‌های غیرمجاز (هر مورد در یک خط)"
+
+msgid "Discussion settings"
+msgstr "تنظیمات گفت‌وگو"
+
+msgid "Display name"
+msgstr "نام نمایشی"
+
+msgid "Download export"
+msgstr "دانلود خروجی"
+
+msgid "Edit term"
+msgstr "ویرایش دسته یا برچسب"
+
+msgid "Edit user"
+msgstr "ویرایش کاربر"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Email when a comment is held for moderation"
+msgstr "هنگام ورود دیدگاه به صف بررسی ایمیل ارسال شود"
+
+msgid "Email when a comment is posted"
+msgstr "هنگام ثبت دیدگاه ایمیل ارسال شود"
+
+msgid "Enable threaded comments"
+msgstr "دیدگاه‌های تودرتو فعال شوند"
+
+msgid "Enter a label and a valid position."
+msgstr "متن لینک و ترتیب معتبر وارد کنید."
+
+msgid "Enter a label, valid link URL, and position."
+msgstr "متن لینک، آدرس معتبر و ترتیب را وارد کنید."
+
+msgid "Enter a name and a valid parent."
+msgstr "نام و دستهٔ مادر معتبر وارد کنید."
+
+msgid "Enter a name and unused valid email address."
+msgstr "نام و ایمیل معتبر و استفاده‌نشده وارد کنید."
+
+msgid "Enter a name and valid email address."
+msgstr "نام و ایمیل معتبر وارد کنید."
+
+msgid "Enter a name."
+msgstr "نام را وارد کنید."
+
 msgid "Enter a non-negative price without thousands separators."
 msgstr "قیمت صفر یا بیشتر را بدون جداکنندهٔ هزارگان وارد کنید."
 
 msgid "Enter a note of up to 2,000 characters."
 msgstr "یادداشت را در حداکثر ۲۰۰۰ نویسه بنویسید."
+
+msgid "Enter a number within the allowed range."
+msgstr "عددی در بازهٔ مجاز وارد کنید."
+
+msgid "Enter a reply to an active comment."
+msgstr "پاسخی برای دیدگاه فعال وارد کنید."
 
 msgid "Enter a title."
 msgstr "عنوان را وارد کنید."
@@ -106,14 +274,35 @@ msgstr "عنوان را وارد کنید."
 msgid "Enter a tracking code of up to 120 characters."
 msgstr "کد رهگیری را در حداکثر ۱۲۰ نویسه وارد کنید."
 
+msgid "Enter a valid email address."
+msgstr "ایمیل معتبر وارد کنید."
+
+msgid "Enter a valid link URL."
+msgstr "آدرس معتبر لینک را وارد کنید."
+
+msgid "Enter a valid username."
+msgstr "نام کاربری معتبر وارد کنید."
+
 msgid "Enter a whole stock quantity."
 msgstr "موجودی را به‌صورت عدد صحیح وارد کنید."
 
 msgid "Enter the content in the body field."
 msgstr "متن محتوا را در کادر وارد کنید."
 
+msgid "Environment"
+msgstr "محیط اجرا"
+
+msgid "Erase personal data"
+msgstr "پاک‌سازی اطلاعات شخصی"
+
+msgid "Erasure changes personal data according to WordPress and plugin retention rules. This does not delete the user account."
+msgstr "پاک‌سازی بر اساس قواعد نگهداری داده در وردپرس و افزونه‌ها انجام می‌شود. حساب کاربری باقی می‌ماند."
+
 msgid "Everything,"
 msgstr "همه‌چیز،"
+
+msgid "Export personal data"
+msgstr "خروجی اطلاعات شخصی"
 
 msgid "File type"
 msgstr "نوع فایل"
@@ -124,8 +313,35 @@ msgstr "فیلتر سفارش‌ها"
 msgid "Find products"
 msgstr "جست‌وجوی محصولات"
 
+msgid "First name"
+msgstr "نام"
+
+msgid "Friday"
+msgstr "جمعه"
+
+msgid "General settings"
+msgstr "تنظیمات عمومی"
+
+msgid "Generate export"
+msgstr "ساخت خروجی"
+
+msgid "Hold for moderation"
+msgstr "انتقال به صف بررسی"
+
+msgid "Homepage"
+msgstr "صفحهٔ اصلی"
+
+msgid "Homepage displays"
+msgstr "صفحهٔ اصلی نمایش می‌دهد"
+
+msgid "I confirm processing this verified erasure request."
+msgstr "پردازش این درخواست تأییدشدهٔ پاک‌سازی را تأیید می‌کنم."
+
 msgid "Image or PDF"
 msgstr "تصویر یا PDF"
+
+msgid "Image sizes apply to new uploads. Existing images keep their generated sizes."
+msgstr "اندازه‌ها برای تصاویر جدید اعمال می‌شوند. تصاویر موجود اندازه‌های تولیدشدهٔ خود را دارند."
 
 msgid "Internal notes"
 msgstr "یادداشت‌های داخلی"
@@ -136,8 +352,35 @@ msgstr "موجودی"
 msgid "Item"
 msgstr "قلم"
 
+msgid "Keep current UTC offset"
+msgstr "حفظ اختلاف زمانی فعلی با UTC"
+
+msgid "Keep existing roles / use default"
+msgstr "حفظ نقش‌های فعلی / استفاده از پیش‌فرض"
+
+msgid "Large maximum height"
+msgstr "بیشینهٔ ارتفاع تصویر بزرگ"
+
+msgid "Large maximum width"
+msgstr "بیشینهٔ عرض تصویر بزرگ"
+
+msgid "Last name"
+msgstr "نام خانوادگی"
+
+msgid "Latest posts"
+msgstr "آخرین نوشته‌ها"
+
+msgid "Link URL"
+msgstr "آدرس لینک"
+
+msgid "Link text"
+msgstr "متن لینک"
+
 msgid "Manage your store from the first order to the final delivery."
 msgstr "از اولین سفارش تا رسیدن کالا به دست مشتری، فروشگاه را از اینجا مدیریت کنید."
+
+msgid "Mark as spam"
+msgstr "علامت‌گذاری هرزنامه"
 
 msgid "Media file"
 msgstr "فایل رسانه"
@@ -145,11 +388,53 @@ msgstr "فایل رسانه"
 msgid "Media library"
 msgstr "کتابخانهٔ رسانه"
 
+msgid "Media settings"
+msgstr "تنظیمات رسانه"
+
+msgid "Medium maximum height"
+msgstr "بیشینهٔ ارتفاع تصویر متوسط"
+
+msgid "Medium maximum width"
+msgstr "بیشینهٔ عرض تصویر متوسط"
+
+msgid "Menu name"
+msgstr "نام فهرست"
+
+msgid "Menu type"
+msgstr "نوع فهرست"
+
+msgid "Menus"
+msgstr "فهرست‌ها"
+
+msgid "Moderation words (one per line)"
+msgstr "واژه‌های نیازمند بررسی (هر مورد در یک خط)"
+
+msgid "Monday"
+msgstr "دوشنبه"
+
+msgid "Move to trash"
+msgstr "انتقال به زباله‌دان"
+
+msgid "My account"
+msgstr "حساب من"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Navigation menus"
+msgstr "فهرست‌های ناوبری"
+
 msgid "New page"
 msgstr "برگهٔ جدید"
 
+msgid "New password (leave empty to keep it)"
+msgstr "رمز جدید (برای حفظ رمز فعلی خالی بگذارید)"
+
 msgid "New post"
 msgstr "نوشتهٔ جدید"
+
+msgid "New privacy request"
+msgstr "درخواست حریم خصوصی جدید"
 
 msgid "New status"
 msgstr "وضعیت جدید"
@@ -166,11 +451,20 @@ msgstr "محصولی پیدا نشد."
 msgid "No records found."
 msgstr "موردی پیدا نشد."
 
+msgid "None"
+msgstr "هیچ‌کدام"
+
 msgid "Open Dexo"
 msgstr "باز کردن دیکسو"
 
+msgid "Open Site Editor"
+msgstr "باز کردن ویرایشگر سایت"
+
 msgid "Open WordPress editor"
 msgstr "باز کردن ویرایشگر وردپرس"
+
+msgid "Open complete Site Health"
+msgstr "باز کردن بررسی کامل سلامت سایت"
 
 msgid "Open file"
 msgstr "باز کردن فایل"
@@ -202,6 +496,9 @@ msgstr "سفارش در دسترس نیست."
 msgid "Orders"
 msgstr "سفارش‌ها"
 
+msgid "Organize uploads into month and year folders"
+msgstr "بارگذاری‌ها در پوشه‌های سال و ماه مرتب شوند"
+
 msgid "Packing slip"
 msgstr "برگهٔ آماده‌سازی سفارش"
 
@@ -220,11 +517,35 @@ msgstr "برگه‌ها"
 msgid "Pagination"
 msgstr "صفحه‌بندی"
 
+msgid "Parent category"
+msgstr "دستهٔ مادر"
+
+msgid "Parent item"
+msgstr "آیتم مادر"
+
+msgid "Pending"
+msgstr "در انتظار بررسی"
+
+msgid "Place this navigation in your header or footer using the Site Editor."
+msgstr "این ناوبری را با ویرایشگر سایت در سربرگ یا پابرگ قرار دهید."
+
+msgid "Position"
+msgstr "ترتیب"
+
+msgid "Position among siblings"
+msgstr "ترتیب در کنار آیتم‌های هم‌سطح"
+
 msgid "Post"
 msgstr "نوشته"
 
 msgid "Posts"
 msgstr "نوشته‌ها"
+
+msgid "Posts page"
+msgstr "برگهٔ نوشته‌ها"
+
+msgid "Posts per page"
+msgstr "تعداد نوشته در صفحه"
 
 msgid "Previous"
 msgstr "قبلی"
@@ -237,6 +558,24 @@ msgstr "قیمت‌گذاری"
 
 msgid "Print"
 msgstr "چاپ"
+
+msgid "Privacy"
+msgstr "حریم خصوصی"
+
+msgid "Privacy policy page"
+msgstr "برگهٔ حریم خصوصی"
+
+msgid "Process erasure"
+msgstr "اجرای پاک‌سازی"
+
+msgid "Processing completed."
+msgstr "پردازش تمام شد."
+
+msgid "Processing failed. Try again or review the request."
+msgstr "پردازش انجام نشد. دوباره تلاش کنید یا درخواست را بررسی کنید."
+
+msgid "Processing…"
+msgstr "در حال پردازش…"
 
 msgid "Product"
 msgstr "محصول"
@@ -253,14 +592,47 @@ msgstr "محصولات"
 msgid "Quantity"
 msgstr "تعداد"
 
+msgid "Reading settings"
+msgstr "تنظیمات خواندن"
+
 msgid "Regular price"
 msgstr "قیمت عادی"
 
 msgid "Regular prices can be edited for simple products and individual variations."
 msgstr "قیمت عادی برای محصولات ساده و هر مدل جداگانۀ محصول قابل ویرایش است."
 
+msgid "Remove item and its child links"
+msgstr "حذف این آیتم و لینک‌های زیرمجموعه"
+
+msgid "Remove this menu item"
+msgstr "حذف این آیتم فهرست"
+
+msgid "Reply"
+msgstr "پاسخ"
+
+msgid "Request type"
+msgstr "نوع درخواست"
+
+msgid "Resend confirmation"
+msgstr "ارسال دوبارهٔ تأییدیه"
+
+msgid "Restore from spam"
+msgstr "بازیابی از هرزنامه"
+
+msgid "Restore from trash"
+msgstr "بازیابی از زباله‌دان"
+
+msgid "Role"
+msgstr "نقش"
+
+msgid "Roles"
+msgstr "نقش‌ها"
+
 msgid "SKU"
 msgstr "شناسهٔ کالا"
+
+msgid "Saturday"
+msgstr "شنبه"
 
 msgid "Save changes"
 msgstr "ذخیرهٔ تغییرات"
@@ -286,8 +658,41 @@ msgstr "جست‌وجو با عنوان"
 msgid "Search orders by ID…"
 msgstr "جست‌وجوی سفارش با شناسه…"
 
+msgid "Search users"
+msgstr "جست‌وجوی کاربران"
+
+msgid "Select a homepage and a different posts page."
+msgstr "صفحهٔ اصلی و برگهٔ نوشته‌های متفاوت را انتخاب کنید."
+
+msgid "Select a location"
+msgstr "انتخاب جایگاه"
+
+msgid "Select a page"
+msgstr "انتخاب برگه"
+
+msgid "Select a valid option."
+msgstr "گزینهٔ معتبر انتخاب کنید."
+
+msgid "Select a valid parent item."
+msgstr "آیتم مادر معتبر انتخاب کنید."
+
+msgid "Select an action"
+msgstr "انتخاب عملیات"
+
 msgid "Select an image or PDF to upload."
 msgstr "یک تصویر یا PDF برای بارگذاری انتخاب کنید."
+
+msgid "Send confirmation request"
+msgstr "ارسال درخواست تأیید"
+
+msgid "Send password reset"
+msgstr "ارسال لینک بازیابی رمز"
+
+msgid "Send reply"
+msgstr "ارسال پاسخ"
+
+msgid "Send this user a password reset link."
+msgstr "لینک بازیابی رمز را برای این کاربر ارسال کنید."
 
 msgid "Shipment"
 msgstr "ارسال"
@@ -304,8 +709,26 @@ msgstr "ورود · دیکسو"
 msgid "Sign out"
 msgstr "خروج"
 
+msgid "Site health"
+msgstr "سلامت سایت"
+
+msgid "Site language"
+msgstr "زبان سایت"
+
+msgid "Site management"
+msgstr "مدیریت سایت"
+
+msgid "Site title"
+msgstr "نام سایت"
+
 msgid "Skip to content"
 msgstr "رفتن به محتوا"
+
+msgid "Slug"
+msgstr "نامک"
+
+msgid "Spam"
+msgstr "هرزنامه"
 
 msgid "Status"
 msgstr "وضعیت"
@@ -328,6 +751,15 @@ msgstr "مدیریت فروشگاه"
 msgid "Store manager"
 msgstr "مدیر فروشگاه"
 
+msgid "Sunday"
+msgstr "یکشنبه"
+
+msgid "Tagline"
+msgstr "توضیح کوتاه سایت"
+
+msgid "Tags"
+msgstr "برچسب‌ها"
+
 msgid "Team member"
 msgstr "عضو تیم"
 
@@ -342,6 +774,18 @@ msgstr "ذخیرهٔ وضعیت سفارش انجام نشد."
 
 msgid "The stock quantity could not be saved."
 msgstr "ذخیرهٔ موجودی انجام نشد."
+
+msgid "Theme"
+msgstr "قالب"
+
+msgid "Theme location"
+msgstr "جایگاه قالب"
+
+msgid "This confirmation link is invalid or expired."
+msgstr "لینک تأیید نامعتبر است یا اعتبارش تمام شده است."
+
+msgid "This navigation contains advanced blocks. Use the Site Editor to preserve them."
+msgstr "این ناوبری بلوک‌های پیشرفته دارد. برای حفظ آن‌ها از ویرایشگر سایت استفاده کنید."
 
 msgid "This page does not accept changes."
 msgstr "تغییرات در این صفحه پذیرفته نمی‌شود."
@@ -370,11 +814,35 @@ msgstr "این تغییر وضعیت در دیکسو در دسترس نیست."
 msgid "This stock status cannot be applied."
 msgstr "ذخیرهٔ این وضعیت موجودی ممکن نیست."
 
+msgid "This theme uses navigation blocks. Place its navigation in the Site Editor."
+msgstr "این قالب از بلوک ناوبری استفاده می‌کند. جایگاه ناوبری را در ویرایشگر سایت تعیین کنید."
+
 msgid "This variation uses the parent product’s stock."
 msgstr "این مدل از موجودی محصول مادر استفاده می‌کند."
 
+msgid "Threaded comment levels"
+msgstr "تعداد سطح دیدگاه‌های تودرتو"
+
+msgid "Thumbnail height"
+msgstr "ارتفاع بندانگشتی"
+
+msgid "Thumbnail width"
+msgstr "عرض بندانگشتی"
+
+msgid "Thursday"
+msgstr "پنجشنبه"
+
+msgid "Time format"
+msgstr "قالب ساعت"
+
+msgid "Timezone"
+msgstr "منطقهٔ زمانی"
+
 msgid "Title"
 msgstr "عنوان"
+
+msgid "Top level"
+msgstr "سطح اول"
 
 msgid "Total"
 msgstr "جمع"
@@ -385,20 +853,47 @@ msgstr "پیگیری ارسال"
 msgid "Tracking code"
 msgstr "کد رهگیری"
 
+msgid "Trash"
+msgstr "زباله‌دان"
+
+msgid "Tuesday"
+msgstr "سه‌شنبه"
+
 msgid "Updated in Dexo."
 msgstr "در دیکسو به‌روز شد."
 
 msgid "Upload media"
 msgstr "بارگذاری رسانه"
 
+msgid "Use a password of at least 12 characters and repeat it exactly."
+msgstr "رمز حداقل ۱۲ نویسه‌ای وارد کنید و آن را دقیق تکرار کنید."
+
+msgid "Use another administrator account to change your own role."
+msgstr "برای تغییر نقش خودتان از یک حساب مدیر دیگر استفاده کنید."
+
 msgid "Use the WordPress editor for this record to preserve its blocks or custom markup."
 msgstr "برای حفظ بلوک‌ها یا کد اختصاصی این محتوا، آن را در ویرایشگر وردپرس باز کنید."
+
+msgid "Username"
+msgstr "نام کاربری"
+
+msgid "Users"
+msgstr "کاربران"
+
+msgid "Users must be registered and logged in to comment"
+msgstr "فقط کاربران واردشده بتوانند دیدگاه بنویسند"
 
 msgid "Variations"
 msgstr "مدل‌ها"
 
 msgid "View store"
 msgstr "مشاهده فروشگاه"
+
+msgid "Wednesday"
+msgstr "چهارشنبه"
+
+msgid "Week starts on"
+msgstr "شروع هفته"
 
 msgid "Welcome to Dexo"
 msgstr "به دیکسو خوش آمدید"
@@ -415,14 +910,26 @@ msgstr "ووکامرس لازم است"
 msgid "WordPress could not save this record."
 msgstr "وردپرس نتوانست این مورد را ذخیره کند."
 
+msgid "WordPress emails a confirmation link to the person before processing."
+msgstr "وردپرس پیش از پردازش، لینک تأیید را برای شخص ایمیل می‌کند."
+
+msgid "You cannot assign this role."
+msgstr "اجازهٔ واگذاری این نقش را ندارید."
+
 msgid "You cannot make this change."
 msgstr "اجازهٔ این تغییر را ندارید."
 
 msgid "You cannot use this publication status."
 msgstr "اجازهٔ استفاده از این وضعیت انتشار را ندارید."
 
+msgid "Your current password is incorrect."
+msgstr "رمز فعلی درست نیست."
+
 msgid "Your form expired. Reload the page and try again."
 msgstr "اعتبار فرم تمام شده است. صفحه را تازه کنید و دوباره تلاش کنید."
+
+msgid "Your profile was saved, but the confirmation email could not be sent. Try the email change again."
+msgstr "مشخصات ذخیره شد، اما ایمیل تأیید ارسال نشد. تغییر ایمیل را دوباره امتحان کنید."
 
 msgid "in its place."
 msgstr "در جای خودش."

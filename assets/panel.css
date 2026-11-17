@@ -298,3 +298,13 @@ address { font-style: normal; }
 .editor-body > .notice { margin-top: 12px; }
 .status-publish { background: #eaf2e5; color: #446339; }
 .status-draft, .status-future { background: #f0f2ec; color: #546044; }
+
+.admin-form { max-width: 840px; }
+.check-field { display: flex !important; align-items: start; gap: 10px; }
+.check-field input[type="checkbox"] { width: 17px; min-height: 17px; height: 17px; flex: none; margin-top: 3px; accent-color: var(--ink); }
+.facts { display: grid; gap: 9px; margin: 10px 0; }
+.facts > div { display: flex; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.facts dt { font-weight: 700; min-width: 120px; }
+.facts dd { margin: 0; }
+.privacy-progress { overflow-wrap: anywhere; }
+button:disabled { opacity: .65; cursor: wait; }

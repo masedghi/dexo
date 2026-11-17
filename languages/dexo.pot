@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.3.0\n"
+"Project-Id-Version: Dexo 0.4.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,7 +8,13 @@ msgstr ""
 msgid "(Untitled)"
 msgstr ""
 
+msgid "A static page"
+msgstr ""
+
 msgid "Access restricted"
+msgstr ""
+
+msgid "Action"
 msgstr ""
 
 msgid "Activate WooCommerce to use the dashboard."
@@ -17,7 +23,19 @@ msgstr ""
 msgid "Add an internal note"
 msgstr ""
 
+msgid "Add link"
+msgstr ""
+
 msgid "Add note"
+msgstr ""
+
+msgid "Add term"
+msgstr ""
+
+msgid "Add user"
+msgstr ""
+
+msgid "All"
 msgstr ""
 
 msgid "All orders"
@@ -29,10 +47,19 @@ msgstr ""
 msgid "All statuses"
 msgstr ""
 
+msgid "Allow comments on new posts"
+msgstr ""
+
+msgid "Allow search engines to index this site"
+msgstr ""
+
 msgid "Alternative text"
 msgstr ""
 
 msgid "Amount"
+msgstr ""
+
+msgid "An email confirmation is pending."
 msgstr ""
 
 msgid "Another update changed this order. Review the current values and try again."
@@ -41,10 +68,28 @@ msgstr ""
 msgid "Another update changed this product. Review the current values and try again."
 msgstr ""
 
+msgid "Apply"
+msgstr ""
+
+msgid "Approve"
+msgstr ""
+
+msgid "Approved"
+msgstr ""
+
 msgid "Ask your store administrator to assign a Dexo role to your account."
 msgstr ""
 
+msgid "Assign menu"
+msgstr ""
+
+msgid "Automatically close comments on old posts"
+msgstr ""
+
 msgid "Back to order"
+msgstr ""
+
+msgid "Block navigation"
 msgstr ""
 
 msgid "Body (text or basic HTML)"
@@ -53,7 +98,16 @@ msgstr ""
 msgid "Caption"
 msgstr ""
 
+msgid "Categories"
+msgstr ""
+
 msgid "Changes saved."
+msgstr ""
+
+msgid "Classic menu"
+msgstr ""
+
+msgid "Close comments after this many days"
 msgstr ""
 
 msgid "Close details"
@@ -62,10 +116,55 @@ msgstr ""
 msgid "Close menu"
 msgstr ""
 
+msgid "Comment author must fill out name and email"
+msgstr ""
+
+msgid "Comment author must have a previously approved comment"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Comments must be manually approved"
+msgstr ""
+
+msgid "Complete all required fields."
+msgstr ""
+
+msgid "Confirm an allowed deletion."
+msgstr ""
+
+msgid "Confirm deletion"
+msgstr ""
+
+msgid "Confirm new password"
+msgstr ""
+
+msgid "Confirm this privacy request before processing."
+msgstr ""
+
+msgid "Confirm your email change"
+msgstr ""
+
+msgid "Confirm your email change using this link:"
+msgstr ""
+
 msgid "Connected to your store"
 msgstr ""
 
 msgid "Content"
+msgstr ""
+
+msgid "Create menu"
+msgstr ""
+
+msgid "Create user and send setup email"
+msgstr ""
+
+msgid "Crop thumbnails to exact dimensions"
+msgstr ""
+
+msgid "Current password (required for email or password changes)"
 msgstr ""
 
 msgid "Customer"
@@ -74,7 +173,22 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
+msgid "Database"
+msgstr ""
+
 msgid "Date"
+msgstr ""
+
+msgid "Date format"
+msgstr ""
+
+msgid "Default comment settings apply to new posts. Existing posts keep their own comment setting."
+msgstr ""
+
+msgid "Delete term"
+msgstr ""
+
+msgid "Description"
 msgstr ""
 
 msgid "Details"
@@ -92,10 +206,64 @@ msgstr ""
 msgid "Dexo · Warehouse"
 msgstr ""
 
+msgid "Disallowed words (one per line)"
+msgstr ""
+
+msgid "Discussion settings"
+msgstr ""
+
+msgid "Display name"
+msgstr ""
+
+msgid "Download export"
+msgstr ""
+
+msgid "Edit term"
+msgstr ""
+
+msgid "Edit user"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Email when a comment is held for moderation"
+msgstr ""
+
+msgid "Email when a comment is posted"
+msgstr ""
+
+msgid "Enable threaded comments"
+msgstr ""
+
+msgid "Enter a label and a valid position."
+msgstr ""
+
+msgid "Enter a label, valid link URL, and position."
+msgstr ""
+
+msgid "Enter a name and a valid parent."
+msgstr ""
+
+msgid "Enter a name and unused valid email address."
+msgstr ""
+
+msgid "Enter a name and valid email address."
+msgstr ""
+
+msgid "Enter a name."
+msgstr ""
+
 msgid "Enter a non-negative price without thousands separators."
 msgstr ""
 
 msgid "Enter a note of up to 2,000 characters."
+msgstr ""
+
+msgid "Enter a number within the allowed range."
+msgstr ""
+
+msgid "Enter a reply to an active comment."
 msgstr ""
 
 msgid "Enter a title."
@@ -104,13 +272,34 @@ msgstr ""
 msgid "Enter a tracking code of up to 120 characters."
 msgstr ""
 
+msgid "Enter a valid email address."
+msgstr ""
+
+msgid "Enter a valid link URL."
+msgstr ""
+
+msgid "Enter a valid username."
+msgstr ""
+
 msgid "Enter a whole stock quantity."
 msgstr ""
 
 msgid "Enter the content in the body field."
 msgstr ""
 
+msgid "Environment"
+msgstr ""
+
+msgid "Erase personal data"
+msgstr ""
+
+msgid "Erasure changes personal data according to WordPress and plugin retention rules. This does not delete the user account."
+msgstr ""
+
 msgid "Everything,"
+msgstr ""
+
+msgid "Export personal data"
 msgstr ""
 
 msgid "File type"
@@ -122,7 +311,34 @@ msgstr ""
 msgid "Find products"
 msgstr ""
 
+msgid "First name"
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "General settings"
+msgstr ""
+
+msgid "Generate export"
+msgstr ""
+
+msgid "Hold for moderation"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
+
+msgid "Homepage displays"
+msgstr ""
+
+msgid "I confirm processing this verified erasure request."
+msgstr ""
+
 msgid "Image or PDF"
+msgstr ""
+
+msgid "Image sizes apply to new uploads. Existing images keep their generated sizes."
 msgstr ""
 
 msgid "Internal notes"
@@ -134,7 +350,34 @@ msgstr ""
 msgid "Item"
 msgstr ""
 
+msgid "Keep current UTC offset"
+msgstr ""
+
+msgid "Keep existing roles / use default"
+msgstr ""
+
+msgid "Large maximum height"
+msgstr ""
+
+msgid "Large maximum width"
+msgstr ""
+
+msgid "Last name"
+msgstr ""
+
+msgid "Latest posts"
+msgstr ""
+
+msgid "Link URL"
+msgstr ""
+
+msgid "Link text"
+msgstr ""
+
 msgid "Manage your store from the first order to the final delivery."
+msgstr ""
+
+msgid "Mark as spam"
 msgstr ""
 
 msgid "Media file"
@@ -143,10 +386,52 @@ msgstr ""
 msgid "Media library"
 msgstr ""
 
+msgid "Media settings"
+msgstr ""
+
+msgid "Medium maximum height"
+msgstr ""
+
+msgid "Medium maximum width"
+msgstr ""
+
+msgid "Menu name"
+msgstr ""
+
+msgid "Menu type"
+msgstr ""
+
+msgid "Menus"
+msgstr ""
+
+msgid "Moderation words (one per line)"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "Move to trash"
+msgstr ""
+
+msgid "My account"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Navigation menus"
+msgstr ""
+
 msgid "New page"
 msgstr ""
 
+msgid "New password (leave empty to keep it)"
+msgstr ""
+
 msgid "New post"
+msgstr ""
+
+msgid "New privacy request"
 msgstr ""
 
 msgid "New status"
@@ -164,10 +449,19 @@ msgstr ""
 msgid "No records found."
 msgstr ""
 
+msgid "None"
+msgstr ""
+
 msgid "Open Dexo"
 msgstr ""
 
+msgid "Open Site Editor"
+msgstr ""
+
 msgid "Open WordPress editor"
+msgstr ""
+
+msgid "Open complete Site Health"
 msgstr ""
 
 msgid "Open file"
@@ -200,6 +494,9 @@ msgstr ""
 msgid "Orders"
 msgstr ""
 
+msgid "Organize uploads into month and year folders"
+msgstr ""
+
 msgid "Packing slip"
 msgstr ""
 
@@ -218,10 +515,34 @@ msgstr ""
 msgid "Pagination"
 msgstr ""
 
+msgid "Parent category"
+msgstr ""
+
+msgid "Parent item"
+msgstr ""
+
+msgid "Pending"
+msgstr ""
+
+msgid "Place this navigation in your header or footer using the Site Editor."
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Position among siblings"
+msgstr ""
+
 msgid "Post"
 msgstr ""
 
 msgid "Posts"
+msgstr ""
+
+msgid "Posts page"
+msgstr ""
+
+msgid "Posts per page"
 msgstr ""
 
 msgid "Previous"
@@ -234,6 +555,24 @@ msgid "Pricing"
 msgstr ""
 
 msgid "Print"
+msgstr ""
+
+msgid "Privacy"
+msgstr ""
+
+msgid "Privacy policy page"
+msgstr ""
+
+msgid "Process erasure"
+msgstr ""
+
+msgid "Processing completed."
+msgstr ""
+
+msgid "Processing failed. Try again or review the request."
+msgstr ""
+
+msgid "Processing…"
 msgstr ""
 
 msgid "Product"
@@ -251,13 +590,46 @@ msgstr ""
 msgid "Quantity"
 msgstr ""
 
+msgid "Reading settings"
+msgstr ""
+
 msgid "Regular price"
 msgstr ""
 
 msgid "Regular prices can be edited for simple products and individual variations."
 msgstr ""
 
+msgid "Remove item and its child links"
+msgstr ""
+
+msgid "Remove this menu item"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Request type"
+msgstr ""
+
+msgid "Resend confirmation"
+msgstr ""
+
+msgid "Restore from spam"
+msgstr ""
+
+msgid "Restore from trash"
+msgstr ""
+
+msgid "Role"
+msgstr ""
+
+msgid "Roles"
+msgstr ""
+
 msgid "SKU"
+msgstr ""
+
+msgid "Saturday"
 msgstr ""
 
 msgid "Save changes"
@@ -284,7 +656,40 @@ msgstr ""
 msgid "Search orders by ID…"
 msgstr ""
 
+msgid "Search users"
+msgstr ""
+
+msgid "Select a homepage and a different posts page."
+msgstr ""
+
+msgid "Select a location"
+msgstr ""
+
+msgid "Select a page"
+msgstr ""
+
+msgid "Select a valid option."
+msgstr ""
+
+msgid "Select a valid parent item."
+msgstr ""
+
+msgid "Select an action"
+msgstr ""
+
 msgid "Select an image or PDF to upload."
+msgstr ""
+
+msgid "Send confirmation request"
+msgstr ""
+
+msgid "Send password reset"
+msgstr ""
+
+msgid "Send reply"
+msgstr ""
+
+msgid "Send this user a password reset link."
 msgstr ""
 
 msgid "Shipment"
@@ -302,7 +707,25 @@ msgstr ""
 msgid "Sign out"
 msgstr ""
 
+msgid "Site health"
+msgstr ""
+
+msgid "Site language"
+msgstr ""
+
+msgid "Site management"
+msgstr ""
+
+msgid "Site title"
+msgstr ""
+
 msgid "Skip to content"
+msgstr ""
+
+msgid "Slug"
+msgstr ""
+
+msgid "Spam"
 msgstr ""
 
 msgid "Status"
@@ -326,6 +749,15 @@ msgstr ""
 msgid "Store manager"
 msgstr ""
 
+msgid "Sunday"
+msgstr ""
+
+msgid "Tagline"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
 msgid "Team member"
 msgstr ""
 
@@ -339,6 +771,18 @@ msgid "The order status could not be saved."
 msgstr ""
 
 msgid "The stock quantity could not be saved."
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "Theme location"
+msgstr ""
+
+msgid "This confirmation link is invalid or expired."
+msgstr ""
+
+msgid "This navigation contains advanced blocks. Use the Site Editor to preserve them."
 msgstr ""
 
 msgid "This page does not accept changes."
@@ -368,10 +812,34 @@ msgstr ""
 msgid "This stock status cannot be applied."
 msgstr ""
 
+msgid "This theme uses navigation blocks. Place its navigation in the Site Editor."
+msgstr ""
+
 msgid "This variation uses the parent product’s stock."
 msgstr ""
 
+msgid "Threaded comment levels"
+msgstr ""
+
+msgid "Thumbnail height"
+msgstr ""
+
+msgid "Thumbnail width"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+msgid "Time format"
+msgstr ""
+
+msgid "Timezone"
+msgstr ""
+
 msgid "Title"
+msgstr ""
+
+msgid "Top level"
 msgstr ""
 
 msgid "Total"
@@ -383,19 +851,46 @@ msgstr ""
 msgid "Tracking code"
 msgstr ""
 
+msgid "Trash"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
 msgid "Updated in Dexo."
 msgstr ""
 
 msgid "Upload media"
 msgstr ""
 
+msgid "Use a password of at least 12 characters and repeat it exactly."
+msgstr ""
+
+msgid "Use another administrator account to change your own role."
+msgstr ""
+
 msgid "Use the WordPress editor for this record to preserve its blocks or custom markup."
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Users must be registered and logged in to comment"
 msgstr ""
 
 msgid "Variations"
 msgstr ""
 
 msgid "View store"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Week starts on"
 msgstr ""
 
 msgid "Welcome to Dexo"
@@ -413,13 +908,25 @@ msgstr ""
 msgid "WordPress could not save this record."
 msgstr ""
 
+msgid "WordPress emails a confirmation link to the person before processing."
+msgstr ""
+
+msgid "You cannot assign this role."
+msgstr ""
+
 msgid "You cannot make this change."
 msgstr ""
 
 msgid "You cannot use this publication status."
 msgstr ""
 
+msgid "Your current password is incorrect."
+msgstr ""
+
 msgid "Your form expired. Reload the page and try again."
+msgstr ""
+
+msgid "Your profile was saved, but the confirmation email could not be sent. Try the email change again."
 msgstr ""
 
 msgid "in its place."

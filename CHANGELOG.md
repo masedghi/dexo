@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+
+- Add general, reading, discussion and media settings with native permissions and stale-form checks.
+- Add user creation, editing, permitted role assignment and password-reset links, plus personal profile, email confirmation and password changes.
+- Add comment moderation and replies, category and tag management, and classic and block navigation with hierarchy and ordering.
+- Add site-health checks and confirmed WordPress privacy exports and erasure with paginated plugin processors.
+- Allow accounts with WordPress read access to manage their own profile.
+
 ## 0.3.0
 
 - Add Posts, Pages and Media sections within the Dexo workspace.

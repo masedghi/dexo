@@ -50,7 +50,7 @@ function sections(): array {
 			'render' => __NAMESPACE__ . '\\render_products', 'submit' => __NAMESPACE__ . '\\submit_product',
 		),
 	);
-	$registered = apply_filters( 'dexo_sections', $sections + content_sections() );
+	$registered = apply_filters( 'dexo_sections', $sections + content_sections() + admin_sections() );
 	return array_filter( $registered, static function ( $section ): bool {
 		return is_array( $section ) && ! empty( $section['label'] ) &&
 			! empty( $section['capability'] ) && is_string( $section['capability'] ) &&
@@ -73,7 +73,7 @@ function render_panel(): void {
 		wp_safe_redirect( wp_login_url( panel_url() ) );
 		exit;
 	}
-	if ( ! can( 'dexo_access' ) && ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) && ! current_user_can( 'upload_files' ) ) {
+	if ( ! can( 'dexo_access' ) && ! current_user_can( 'read' ) ) {
 		status_header( 403 );
 		render_layout( __( 'Access restricted', 'dexo' ), static function (): void {
 			echo '<p>' . esc_html__( 'Ask your store administrator to assign a Dexo role to your account.', 'dexo' ) . '</p>';
@@ -88,6 +88,7 @@ function render_panel(): void {
 		exit;
 	}
 
+	if ( 'profile' === request_text( $_GET, 'tab' ) ) { confirm_profile_email(); }
 	$sections = sections();
 	$tab = sanitize_key( request_text( $_GET, 'tab' ) ) ?: array_key_first( $sections );
 	if ( ! isset( $sections[ $tab ] ) ) {
@@ -112,7 +113,9 @@ function render_panel(): void {
 		} else {
 			$result = submit_section( $section['submit'], $tab, $id );
 			if ( ! is_wp_error( $result ) ) {
-				wp_safe_redirect( panel_url( array( 'tab' => $tab, 'id' => is_int( $result ) ? $result : $id, 'saved' => '1' ) ), 303 );
+				$redirect_args = array( 'tab' => $tab, 'id' => is_int( $result ) ? $result : $id, 'saved' => '1' );
+				if ( 'menus' === $tab && 'block' === request_text( $_POST, 'menu_kind' ) ) { $redirect_args['kind'] = 'block'; }
+				wp_safe_redirect( panel_url( $redirect_args ), 303 );
 				exit;
 			}
 			$error = $result;
@@ -154,6 +157,18 @@ function icon( string $name, int $size = 18 ): void {
 		'posts' => '<path d="M5 3h14v18H5zm3 5h8m-8 4h8m-8 4h5"/>',
 		'pages' => '<path d="M7 3h7l5 5v13H7zm7 0v5h5M4 6v12"/>',
 		'media' => '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.5"/><path d="m3 17 5-5 3 3 4-4 6 6"/>',
+		'profile' => '<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>',
+		'users' => '<circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2m1-16a3 3 0 0 1 0 6m2 3a6 6 0 0 1 3 5v2"/>',
+		'comments' => '<path d="M21 15a3 3 0 0 1-3 3H8l-5 4V5a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Z"/>',
+		'categories' => '<path d="m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5m-18 5 9 5 9-5"/>',
+		'tags' => '<path d="M3 3h8l10 10-8 8L3 11Zm4 4h.01"/>',
+		'menus' => '<path d="M4 5h16M4 12h16M4 19h16"/>',
+		'general' => '<circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>',
+		'reading' => '<path d="M3 4h7l2 2 2-2h7v16h-7l-2 2-2-2H3Zm9 2v16"/>',
+		'discussion' => '<path d="M3 3h18v14H8l-5 4Z"/><path d="M7 7h10M7 12h7"/>',
+		'media-settings' => '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="m3 16 6-5 5 5 3-3 4 3"/>',
+		'health' => '<path d="M2 12h5l3-8 4 16 3-8h5"/>',
+		'privacy' => '<path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6Z"/><path d="m8 12 3 3 5-6"/>',
 		'search' => '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>',
 		'menu' => '<path d="M4 6h16M4 12h16M4 18h16"/>',
 		'close' => '<path d="m6 6 12 12M18 6 6 18"/>',
