@@ -1,0 +1,279 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dexo 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Access restricted"
+msgstr ""
+
+msgid "Activate WooCommerce to use the dashboard."
+msgstr ""
+
+msgid "Add an internal note"
+msgstr ""
+
+msgid "Add note"
+msgstr ""
+
+msgid "All orders"
+msgstr ""
+
+msgid "All products"
+msgstr ""
+
+msgid "All statuses"
+msgstr ""
+
+msgid "Amount"
+msgstr ""
+
+msgid "Another update changed this order. Review the current values and try again."
+msgstr ""
+
+msgid "Another update changed this product. Review the current values and try again."
+msgstr ""
+
+msgid "Ask your store administrator to assign a Dexo role to your account."
+msgstr ""
+
+msgid "Back to order"
+msgstr ""
+
+msgid "Changes saved."
+msgstr ""
+
+msgid "Customer"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Dexo · Catalog"
+msgstr ""
+
+msgid "Dexo · Orders"
+msgstr ""
+
+msgid "Dexo · Warehouse"
+msgstr ""
+
+msgid "Enter a non-negative price without thousands separators."
+msgstr ""
+
+msgid "Enter a note of up to 2,000 characters."
+msgstr ""
+
+msgid "Enter a tracking code of up to 120 characters."
+msgstr ""
+
+msgid "Enter a whole stock quantity."
+msgstr ""
+
+msgid "Filter orders"
+msgstr ""
+
+msgid "Find products"
+msgstr ""
+
+msgid "Internal notes"
+msgstr ""
+
+msgid "Inventory"
+msgstr ""
+
+msgid "Item"
+msgstr ""
+
+msgid "New status"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "No orders found."
+msgstr ""
+
+msgid "No products found."
+msgstr ""
+
+msgid "Open Dexo"
+msgstr ""
+
+msgid "Open parent product"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Order ID"
+msgstr ""
+
+msgid "Order items"
+msgstr ""
+
+msgid "Order status"
+msgstr ""
+
+msgid "Order total"
+msgstr ""
+
+msgid "Order unavailable."
+msgstr ""
+
+msgid "Orders"
+msgstr ""
+
+msgid "Packing slip"
+msgstr ""
+
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+msgid "Page unavailable"
+msgstr ""
+
+msgid "Pagination"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Price"
+msgstr ""
+
+msgid "Pricing"
+msgstr ""
+
+msgid "Print"
+msgstr ""
+
+msgid "Product"
+msgstr ""
+
+msgid "Product name or exact SKU"
+msgstr ""
+
+msgid "Product unavailable."
+msgstr ""
+
+msgid "Products"
+msgstr ""
+
+msgid "Quantity"
+msgstr ""
+
+msgid "Regular price"
+msgstr ""
+
+msgid "Regular prices can be edited for simple products and individual variations."
+msgstr ""
+
+msgid "SKU"
+msgstr ""
+
+msgid "Save inventory"
+msgstr ""
+
+msgid "Save price"
+msgstr ""
+
+msgid "Save status"
+msgstr ""
+
+msgid "Save tracking code"
+msgstr ""
+
+msgid "Shipment"
+msgstr ""
+
+msgid "Shipment tracking updated in Dexo."
+msgstr ""
+
+msgid "Sign in · Dexo"
+msgstr ""
+
+msgid "Sign out"
+msgstr ""
+
+msgid "Skip to content"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Stock"
+msgstr ""
+
+msgid "Stock quantity"
+msgstr ""
+
+msgid "Stock status"
+msgstr ""
+
+msgid "The note could not be saved."
+msgstr ""
+
+msgid "The order status could not be saved."
+msgstr ""
+
+msgid "The stock quantity could not be saved."
+msgstr ""
+
+msgid "This page does not accept changes."
+msgstr ""
+
+msgid "This page is unavailable for your account."
+msgstr ""
+
+msgid "This product does not manage its own stock quantity."
+msgstr ""
+
+msgid "This product has a sale price. Its regular price must stay above that price."
+msgstr ""
+
+msgid "This record is being updated. Try again in a moment."
+msgstr ""
+
+msgid "This status change is unavailable in Dexo."
+msgstr ""
+
+msgid "This stock status cannot be applied."
+msgstr ""
+
+msgid "This variation uses the parent product’s stock."
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Track shipment"
+msgstr ""
+
+msgid "Tracking code"
+msgstr ""
+
+msgid "Updated in Dexo."
+msgstr ""
+
+msgid "Variations"
+msgstr ""
+
+msgid "WooCommerce could not save the change. Reload the order and check its current state."
+msgstr ""
+
+msgid "WooCommerce could not save the change. Reload the product and check its current state."
+msgstr ""
+
+msgid "WooCommerce is required"
+msgstr ""
+
+msgid "You cannot make this change."
+msgstr ""
+
+msgid "Your form expired. Reload the page and try again."
+msgstr ""

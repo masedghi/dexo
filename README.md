@@ -1,0 +1,42 @@
+# Dexo
+
+Dexo is a standalone operations dashboard for stores using WooCommerce. It runs on your existing WordPress site at `/dexo/` and uses the store’s WordPress accounts. It includes English and Persian interfaces.
+
+[راهنمای فارسی](docs/install-fa.md) · [Downloads](https://github.com/masedghi/dexo/releases) · [Extend Dexo](docs/develop.md)
+
+## What you can do
+
+- Find orders by their internal ID or browse by status. Open order items, update standard WooCommerce statuses, add private notes, record a tracking code, and print a packing slip.
+- Search products by name or exact SKU. Update regular prices, stock counts, and stock availability for supported products. Edit individual variations, or manage inherited inventory on their parent product.
+- Give team members a dedicated orders, warehouse, or catalog role. Each role sees only its Dexo screens and the fields it needs.
+
+Product creation, discounts, refunds, shipping integrations, and bulk changes are outside the scope of this release. Changes to orders invoke WooCommerce’s normal status hooks and may trigger its stock or notification workflows.
+
+## Install
+
+1. Use a staging site with WordPress 6.8 or newer, PHP 8.1 or newer with `mbstring`, and WooCommerce active. The first release was verified on WordPress 7.1, WooCommerce 11.1.0, PHP 8.5, MariaDB, and Twenty Twenty-Five. Test your store’s versions and plugins before rollout. Single-site WordPress is the supported setup for this release.
+2. Download **`dexo-0.1.0.zip`** from the [v0.1.0 release](https://github.com/masedghi/dexo/releases/tag/v0.1.0). Use the named ZIP under Assets.
+3. In WordPress, open **Plugins → Add Plugin → Upload Plugin**. Upload the ZIP and activate **Dexo**. The Plugins list has an **Open Dexo** link.
+4. Open `https://your-store.example/dexo/`. With plain permalinks, use `https://your-store.example/?dexo=1` instead. Reserve the `dexo` path for the dashboard and exclude the dashboard and sign-in from any full-page cache or CDN page caching. If the store lives in a subdirectory, use **Open Dexo** to get its URL.
+5. In **Users**, create a separate account for each employee and assign its Dexo role. Share the **Open Dexo** URL with staff. Test each role using its own account.
+
+| Role | Day-to-day access |
+| --- | --- |
+| **Dexo · Orders** | Orders, standard status changes, customer details, totals, private notes, shipment tracking and packing slip |
+| **Dexo · Warehouse** | Order items and packing slips, tracking, product lookup, and inventory. Customer contact details, order amounts, and product prices are restricted. |
+| **Dexo · Catalog** | Product lookup, regular price and stock edits. |
+| **WordPress Administrator / WooCommerce Shop Manager** | All built-in Dexo functions and their existing WordPress access. |
+
+Staff sign in through the Dexo-styled WordPress login. Use the Dexo URL as the team entry point. Accounts that also carry other WordPress roles keep the capabilities that those roles grant. Authentication extensions and account recovery screens are controlled by the site’s login stack. Verify any SSO, CAPTCHA or two-factor plugin in staging.
+
+## Update or remove
+
+Use **Plugins → Add Plugin → Upload Plugin** to install a newer Dexo ZIP, and choose **Replace current with uploaded**. Test updates in staging first. Keep the previous release ZIP available to reinstall if necessary.
+
+Disable Dexo from **Plugins** to stop serving the dashboard and end its redirects. WooCommerce changes already saved, Dexo role assignments, and tracking values are retained. Reassign dedicated staff before removing Dexo if they need a different role afterward.
+
+## Development
+
+Dexo uses PHP, CSS, and a small print script. The package is ready to run on PHP. The [developer guide](docs/develop.md) covers extension hooks, local integration tests, and building the ZIP. [Report a security issue privately](SECURITY.md).
+
+Source code is licensed under [GPL-2.0-or-later](LICENSE).

@@ -1,0 +1,13 @@
+html { background: #111319; }
+body.login {
+	background: #111319;
+	color: #f1f3f8;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+}
+body.login #login { width: min(370px, calc(100% - 2rem)); box-sizing: border-box; }
+body.login #login h1 a { width: auto; height: auto; background: none !important; text-indent: 0; color: #c7f58a; font: 750 2rem/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .17em; text-decoration: none; direction: ltr; }
+body.login form { background: #191c25; border: 1px solid #313645; border-radius: 12px; color: #f1f3f8; }
+body.login input[type="text"], body.login input[type="password"], body.login input[type="email"] { background: #111319; border-color: #626c83; color: #f1f3f8; }
+body.login .button-primary { background: #c7f58a; border-color: #c7f58a; color: #1a2614; font-weight: 700; }
+body.login .button-secondary, body.login #nav a, body.login #backtoblog a, body.login .privacy-policy-link { color: #c7f58a; }
+body.login :focus-visible { outline: 2px solid #d4ff97; outline-offset: 3px; }

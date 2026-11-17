@@ -1,0 +1,281 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dexo 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Access restricted"
+msgstr "دسترسی محدود است"
+
+msgid "Activate WooCommerce to use the dashboard."
+msgstr "برای استفاده از پنل، ووکامرس را فعال کنید."
+
+msgid "Add an internal note"
+msgstr "نوشتن یادداشت داخلی"
+
+msgid "Add note"
+msgstr "ثبت یادداشت"
+
+msgid "All orders"
+msgstr "همهٔ سفارش‌ها"
+
+msgid "All products"
+msgstr "همهٔ محصولات"
+
+msgid "All statuses"
+msgstr "همهٔ وضعیت‌ها"
+
+msgid "Amount"
+msgstr "مبلغ"
+
+msgid "Another update changed this order. Review the current values and try again."
+msgstr "این سفارش در همین فاصله تغییر کرده است. مقادیر فعلی را بررسی کنید و دوباره تلاش کنید."
+
+msgid "Another update changed this product. Review the current values and try again."
+msgstr "این محصول در همین فاصله تغییر کرده است. مقادیر فعلی را بررسی کنید و دوباره تلاش کنید."
+
+msgid "Ask your store administrator to assign a Dexo role to your account."
+msgstr "از مدیر فروشگاه بخواهید یک نقش دیکسو به حساب شما بدهد."
+
+msgid "Back to order"
+msgstr "بازگشت به سفارش"
+
+msgid "Changes saved."
+msgstr "تغییرات ذخیره شد."
+
+msgid "Customer"
+msgstr "مشتری"
+
+msgid "Dashboard"
+msgstr "پنل"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Dexo · Catalog"
+msgstr "دیکسو · کاتالوگ"
+
+msgid "Dexo · Orders"
+msgstr "دیکسو · سفارش‌ها"
+
+msgid "Dexo · Warehouse"
+msgstr "دیکسو · انبار"
+
+msgid "Enter a non-negative price without thousands separators."
+msgstr "قیمت صفر یا بیشتر را بدون جداکنندهٔ هزارگان وارد کنید."
+
+msgid "Enter a note of up to 2,000 characters."
+msgstr "یادداشت را در حداکثر ۲۰۰۰ نویسه بنویسید."
+
+msgid "Enter a tracking code of up to 120 characters."
+msgstr "کد رهگیری را در حداکثر ۱۲۰ نویسه وارد کنید."
+
+msgid "Enter a whole stock quantity."
+msgstr "موجودی را به‌صورت عدد صحیح وارد کنید."
+
+msgid "Filter orders"
+msgstr "فیلتر سفارش‌ها"
+
+msgid "Find products"
+msgstr "جست‌وجوی محصولات"
+
+msgid "Internal notes"
+msgstr "یادداشت‌های داخلی"
+
+msgid "Inventory"
+msgstr "موجودی"
+
+msgid "Item"
+msgstr "قلم"
+
+msgid "New status"
+msgstr "وضعیت جدید"
+
+msgid "Next"
+msgstr "بعدی"
+
+msgid "No orders found."
+msgstr "سفارشی پیدا نشد."
+
+msgid "No products found."
+msgstr "محصولی پیدا نشد."
+
+msgid "Open Dexo"
+msgstr "باز کردن دیکسو"
+
+msgid "Open parent product"
+msgstr "باز کردن محصول مادر"
+
+msgid "Order"
+msgstr "سفارش"
+
+msgid "Order ID"
+msgstr "شناسهٔ سفارش"
+
+msgid "Order items"
+msgstr "اقلام سفارش"
+
+msgid "Order status"
+msgstr "وضعیت سفارش"
+
+msgid "Order total"
+msgstr "جمع سفارش"
+
+msgid "Order unavailable."
+msgstr "سفارش در دسترس نیست."
+
+msgid "Orders"
+msgstr "سفارش‌ها"
+
+msgid "Packing slip"
+msgstr "برگهٔ آماده‌سازی سفارش"
+
+msgid "Page %1$s of %2$s"
+msgstr "صفحهٔ %1$s از %2$s"
+
+msgid "Page unavailable"
+msgstr "صفحه در دسترس نیست"
+
+msgid "Pagination"
+msgstr "صفحه‌بندی"
+
+msgid "Previous"
+msgstr "قبلی"
+
+msgid "Price"
+msgstr "قیمت"
+
+msgid "Pricing"
+msgstr "قیمت‌گذاری"
+
+msgid "Print"
+msgstr "چاپ"
+
+msgid "Product"
+msgstr "محصول"
+
+msgid "Product name or exact SKU"
+msgstr "نام محصول یا شناسهٔ دقیق کالا"
+
+msgid "Product unavailable."
+msgstr "محصول در دسترس نیست."
+
+msgid "Products"
+msgstr "محصولات"
+
+msgid "Quantity"
+msgstr "تعداد"
+
+msgid "Regular price"
+msgstr "قیمت عادی"
+
+msgid "Regular prices can be edited for simple products and individual variations."
+msgstr "قیمت عادی برای محصولات ساده و هر مدل جداگانۀ محصول قابل ویرایش است."
+
+msgid "SKU"
+msgstr "شناسهٔ کالا"
+
+msgid "Save inventory"
+msgstr "ذخیرهٔ موجودی"
+
+msgid "Save price"
+msgstr "ذخیرهٔ قیمت"
+
+msgid "Save status"
+msgstr "ذخیرهٔ وضعیت"
+
+msgid "Save tracking code"
+msgstr "ذخیرهٔ کد رهگیری"
+
+msgid "Shipment"
+msgstr "ارسال"
+
+msgid "Shipment tracking updated in Dexo."
+msgstr "رهگیری ارسال در دیکسو به‌روز شد."
+
+msgid "Sign in · Dexo"
+msgstr "ورود · دیکسو"
+
+msgid "Sign out"
+msgstr "خروج"
+
+msgid "Skip to content"
+msgstr "رفتن به محتوا"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Stock"
+msgstr "موجودی"
+
+msgid "Stock quantity"
+msgstr "تعداد موجودی"
+
+msgid "Stock status"
+msgstr "وضعیت موجودی"
+
+msgid "The note could not be saved."
+msgstr "ذخیرهٔ یادداشت انجام نشد."
+
+msgid "The order status could not be saved."
+msgstr "ذخیرهٔ وضعیت سفارش انجام نشد."
+
+msgid "The stock quantity could not be saved."
+msgstr "ذخیرهٔ موجودی انجام نشد."
+
+msgid "This page does not accept changes."
+msgstr "تغییرات در این صفحه پذیرفته نمی‌شود."
+
+msgid "This page is unavailable for your account."
+msgstr "این صفحه برای حساب شما در دسترس نیست."
+
+msgid "This product does not manage its own stock quantity."
+msgstr "این محصول موجودی جداگانه ندارد."
+
+msgid "This product has a sale price. Its regular price must stay above that price."
+msgstr "این محصول قیمت ویژه دارد. قیمت عادی باید از آن بیشتر باشد."
+
+msgid "This record is being updated. Try again in a moment."
+msgstr "این مورد در حال به‌روزرسانی است. چند لحظهٔ دیگر دوباره تلاش کنید."
+
+msgid "This status change is unavailable in Dexo."
+msgstr "این تغییر وضعیت در دیکسو در دسترس نیست."
+
+msgid "This stock status cannot be applied."
+msgstr "ذخیرهٔ این وضعیت موجودی ممکن نیست."
+
+msgid "This variation uses the parent product’s stock."
+msgstr "این مدل از موجودی محصول مادر استفاده می‌کند."
+
+msgid "Total"
+msgstr "جمع"
+
+msgid "Track shipment"
+msgstr "پیگیری ارسال"
+
+msgid "Tracking code"
+msgstr "کد رهگیری"
+
+msgid "Updated in Dexo."
+msgstr "در دیکسو به‌روز شد."
+
+msgid "Variations"
+msgstr "مدل‌ها"
+
+msgid "WooCommerce could not save the change. Reload the order and check its current state."
+msgstr "ووکامرس نتوانست تغییر را ذخیره کند. سفارش را تازه کنید و وضعیت فعلی را بررسی کنید."
+
+msgid "WooCommerce could not save the change. Reload the product and check its current state."
+msgstr "ووکامرس نتوانست تغییر را ذخیره کند. محصول را تازه کنید و وضعیت فعلی را بررسی کنید."
+
+msgid "WooCommerce is required"
+msgstr "ووکامرس لازم است"
+
+msgid "You cannot make this change."
+msgstr "اجازهٔ این تغییر را ندارید."
+
+msgid "Your form expired. Reload the page and try again."
+msgstr "اعتبار فرم تمام شده است. صفحه را تازه کنید و دوباره تلاش کنید."

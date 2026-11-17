@@ -1,0 +1,22 @@
+name: Verify plugin package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PHP syntax
+        run: find . -name '*.php' -exec php -l {} +
+      - name: Create and validate the ZIP
+        run: |
+          python3 scripts/package.py
+          cd dist
+          sha256sum -c *.sha256
+          unzip -t *.zip
