@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0
+
+- Add a role-aware Overview as the default landing page, with quick links, actionable orders and out-of-stock products.
+- Add native-permission Reports: date presets/custom range, net sales, refunds, daily chart, order statuses, product rankings and accessible daily figures.
+- Process orders in bounded, authenticated batches using WooCommerce CRUD for HPOS and legacy stores. Keep incomplete totals hidden and document timezone, refund and currency semantics.
+- Add Persian translations and checks for financial calculations, pagination, DST and role/ownership boundaries.
+
 ## 0.4.0
 
 - Add general, reading, discussion and media settings with native permissions and stale-form checks.

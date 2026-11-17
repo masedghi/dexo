@@ -8,6 +8,10 @@ Dexo is a standalone operations dashboard for stores using WooCommerce. It runs 
 
 Captured from Dexo running on a demo WooCommerce store with sample data.
 
+![Dexo Overview](https://raw.githubusercontent.com/masedghi/dexo/v0.5.0/docs/screenshots/overview.png)
+
+![Dexo Reports](https://raw.githubusercontent.com/masedghi/dexo/v0.5.0/docs/screenshots/reports.png)
+
 ![Dexo desktop dashboard showing the order list, search, and status filters](https://raw.githubusercontent.com/masedghi/dexo/v0.4.0/docs/screenshots/orders.png)
 
 <details>
@@ -55,6 +59,9 @@ Captured from Dexo running on a demo WooCommerce store with sample data.
 </details>
 
 ## What you can do
+
+- Start with a role-aware Overview: quick access, recent actionable orders, inventory checks, and the last 30 days for authorized store managers.
+- Explore Reports with date filters, daily net sales, order status breakdowns and best-selling products. Native WooCommerce report permissions protect financial data. See [calculation semantics](docs/develop.md#overview-and-reports-05).
 
 - Find orders by their internal ID or browse by status. Open order items, update standard WooCommerce statuses, add private notes, record a tracking code, and print a packing slip.
 - Search products by name or exact SKU. Update regular prices, stock counts, and stock availability for supported products. Edit individual variations, or manage inherited inventory on their parent product.

@@ -67,19 +67,19 @@ def run(base, route, ids, admin_login, admin_password):
     order, product, parent, variation = (ids[key] for key in ("order", "product", "parent", "variation"))
     admin = Browser(base, route)
     page, url, headers = admin.login(admin_login, admin_password)
-    assert "<h1>Orders</h1>" in page and "wp-admin-bar" not in page and "wp-login.php" not in url
+    assert "<h1>Overview</h1>" in page and "wp-admin-bar" not in page and "wp-login.php" not in url
     assert "no-store" in headers["Cache-Control"]
-    assert f"#{order}</a>" in admin.panel(order=order)[0]
-    assert "No orders found." in admin.panel(order=order, status="wc-completed")[0]
+    assert f"#{order}</a>" in admin.panel(tab="orders", order=order)[0]
+    assert "No orders found." in admin.panel(tab="orders", order=order, status="wc-completed")[0]
 
     customer = Browser(base, route)
-    assert "<h1>My account</h1>" in customer.login("dexo_customer_test")[0]
+    assert "<h1>Overview</h1>" in customer.login("dexo_customer_test")[0]
     customer.panel(tab="orders", expect=404)
 
     warehouse = Browser(base, route)
     warehouse.login("dexo_warehouse_test")
     page, url, _ = warehouse.request("/wp-admin/")
-    assert "wp-admin" not in url and "<h1>Orders</h1>" in page
+    assert "wp-admin" not in url and "<h1>Overview</h1>" in page
     page = warehouse.panel(tab="orders", id=order)[0]
     for private in ("person@example.test", "555-0109", "22 Example Road", "Synthetic private note", "Order total", "Save status"):
         assert private not in page, private

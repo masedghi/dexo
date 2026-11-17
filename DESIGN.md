@@ -28,3 +28,7 @@ Status badges use soft green for completed or in-stock, blue for processing, amb
 The public plugin uses a local font and server-rendered views. Additive features should reuse the tokens and visible hierarchy described here. Keep navigation scoped to each user’s allowed sections, and show private order fields only when the existing capabilities allow them.
 
 Site management uses the shared card, form, checkbox, table and notice styles. Group these screens below content navigation. Profile forms show the current account, and permission-sensitive settings and operations appear only to eligible roles.
+
+## Overview and reporting
+
+Overview and Reports use the existing sage, paper, ink and magenta tokens. Four metric cards lead into a daily sales chart and status meters; product rankings and exact daily figures follow. At narrow widths the metrics use two columns, charts stack, and filters wrap. Every chart has a native table or numeric alternative. Overview quick links and work queues follow the user’s capabilities.

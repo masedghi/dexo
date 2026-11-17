@@ -99,3 +99,32 @@ for (const form of document.querySelectorAll('.privacy-process')) {
     }
   });
 }
+
+// A report is shown only after every batch has completed. Retrying never adds twice.
+for (const report of document.querySelectorAll('[data-report-token]')) {
+  const status = report.querySelector('[role="status"]');
+  const initial = status.textContent;
+  const progress = report.querySelector('progress');
+  (async () => {
+    try {
+      let busy = 0;
+      for (;;) {
+        const response = await fetch(report.dataset.endpoint, {
+          method: 'POST', credentials: 'same-origin',
+          body: new URLSearchParams({action: 'dexo_report', security: report.dataset.security, token: report.dataset.reportToken})
+        });
+        if (response.status === 409 && busy++ < 5) { await new Promise(resolve => setTimeout(resolve, 1000)); continue; }
+        const result = await response.json();
+        if (!response.ok || !result.success) throw new Error();
+        busy = 0;
+        progress.max = Math.max(1, result.data.total);
+        progress.value = result.data.processed;
+        status.textContent = `${initial} (${result.data.processed} / ${result.data.total})`;
+        if (result.data.done) { location.reload(); break; }
+      }
+    } catch {
+      status.textContent = initial;
+      report.querySelector('a').focus();
+    }
+  })();
+}

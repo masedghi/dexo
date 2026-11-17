@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.4.0\n"
+"Project-Id-Version: Dexo 0.5.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -933,3 +933,132 @@ msgstr "مشخصات ذخیره شد، اما ایمیل تأیید ارسال �
 
 msgid "in its place."
 msgstr "در جای خودش."
+
+msgid "Overview"
+msgstr "پیشخوان"
+
+msgid "Reports"
+msgstr "گزارش‌ها"
+
+msgid "Choose a valid date range of up to 366 days, ending today or earlier."
+msgstr "یک بازهٔ معتبر تا ۳۶۶ روز انتخاب کنید که پایان آن امروز یا قبل از امروز باشد."
+
+msgid "Store currency changed. Refresh the report."
+msgstr "واحد پول فروشگاه تغییر کرده است. گزارش را تازه کنید."
+
+msgid "Report expired. Reload the page."
+msgstr "گزارش منقضی شده است. صفحه را دوباره باز کنید."
+
+msgid "Could not finish the report. Reload to retry."
+msgstr "تهیهٔ گزارش کامل نشد. برای تلاش دوباره صفحه را باز کنید."
+
+msgid "Preparing your report"
+msgstr "در حال آماده‌سازی گزارش"
+
+msgid "Processing orders in batches. Totals appear when all orders have been processed."
+msgstr "سفارش‌ها مرحله‌به‌مرحله بررسی می‌شوند. نتیجه پس از بررسی همهٔ سفارش‌ها نمایش داده می‌شود."
+
+msgid "Reload to continue"
+msgstr "باز کردن دوباره برای ادامه"
+
+msgid "Net sales"
+msgstr "فروش خالص"
+
+msgid "Excluding shipping and tax"
+msgstr "بدون هزینهٔ ارسال و مالیات"
+
+msgid "Orders placed"
+msgstr "سفارش‌های ثبت‌شده"
+
+msgid "All order statuses"
+msgstr "همهٔ وضعیت‌های سفارش"
+
+msgid "Average net order"
+msgstr "میانگین خالص هر سفارش"
+
+msgid "Paid and refunded orders"
+msgstr "سفارش‌های پرداخت‌شده و بازپرداخت‌شده"
+
+msgid "Refunds"
+msgstr "بازپرداخت‌ها"
+
+msgid "Sales trend"
+msgstr "روند فروش"
+
+msgid "Daily net sales; exact values in the table below."
+msgstr "فروش خالص روزانه؛ اعداد دقیق در جدول پایین صفحه."
+
+msgid "No orders in this period."
+msgstr "در این بازه سفارشی ثبت نشده است."
+
+msgid "Best-selling products"
+msgstr "محصولات پرفروش"
+
+msgid "%s units"
+msgstr "%s عدد"
+
+msgid "No paid products in this period."
+msgstr "در این بازه محصول پرداخت‌شده‌ای وجود ندارد."
+
+msgid "Daily figures and calculation details"
+msgstr "اعداد روزانه و جزئیات محاسبه"
+
+msgid "Orders are grouped by their creation date in the site timezone. Refunds recorded by refresh time reduce the original order period. This is a live operational report, not an accounting statement."
+msgstr "مبنای گزارش، تاریخ ثبت سفارش در منطقهٔ زمانی سایت است. بازپرداخت‌های ثبت‌شده تا زمان تازه‌سازی از بازهٔ سفارش اصلی کسر می‌شوند. این گزارش عملیاتی است و جای صورت‌حساب مالی را نمی‌گیرد."
+
+msgid "Updated: %s · Site timezone: %s"
+msgstr "آخرین به‌روزرسانی: %s · منطقهٔ زمانی سایت: %s"
+
+msgid "%s orders in other currencies were excluded."
+msgstr "%s سفارش با واحد پول دیگر در این گزارش محاسبه نشده‌اند."
+
+msgid "Your store, in perspective"
+msgstr "تصویر روشن فروشگاه شما"
+
+msgid "See what is moving your business."
+msgstr "نبض فروشگاهت را ببین."
+
+msgid "From"
+msgstr "از"
+
+msgid "To"
+msgstr "تا"
+
+msgid "Report period"
+msgstr "بازهٔ گزارش"
+
+msgid "Last %s days"
+msgstr "%s روز اخیر"
+
+msgid "Could not load the report. Please try again."
+msgstr "گزارش بارگذاری نشد. دوباره تلاش کنید."
+
+msgid "Hello, %s."
+msgstr "سلام، %s."
+
+msgid "A clear view. A calmer workday."
+msgstr "نگاه روشن‌تر. روز کاری آرام‌تر."
+
+msgid "Quick access"
+msgstr "دسترسی سریع"
+
+msgid "The last 30 days at a glance"
+msgstr "۳۰ روز گذشته در یک نگاه"
+
+msgid "View reports"
+msgstr "مشاهدهٔ گزارش‌ها"
+
+msgid "Orders to work on"
+msgstr "سفارش‌های در انتظار اقدام"
+
+msgid "View all"
+msgstr "مشاهدهٔ همه"
+
+msgid "Everything is up to date."
+msgstr "همه‌چیز به‌روز است."
+
+msgid "Stock to check"
+msgstr "موجودی‌های نیازمند بررسی"
+
+msgid "No published products are out of stock."
+msgstr "هیچ محصول منتشرشده‌ای ناموجود نیست."

@@ -41,6 +41,8 @@ function is_panel_request(): bool {
 
 function sections(): array {
 	$sections = array(
+		'overview' => array( 'label' => __( 'Overview', 'dexo' ), 'capability' => 'read', 'render' => __NAMESPACE__ . '\\render_overview' ),
+		'reports' => array( 'label' => __( 'Reports', 'dexo' ), 'capability' => 'view_woocommerce_reports', 'render' => __NAMESPACE__ . '\\render_reports' ),
 		'orders' => array(
 			'label' => __( 'Orders', 'dexo' ), 'capability' => 'dexo_orders_read',
 			'render' => __NAMESPACE__ . '\\render_orders', 'submit' => __NAMESPACE__ . '\\submit_order',
@@ -152,6 +154,8 @@ function render_panel(): void {
 
 function icon( string $name, int $size = 18 ): void {
 	$paths = array(
+		'overview' => '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="11" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 18h7m-7 3h7"/>',
+		'reports' => '<path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/>',
 		'orders' => '<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16m-11 4a3 3 0 0 0 6 0"/>',
 		'products' => '<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm8 4.5L12 12l-8-4.5m8 4.5v9M8 5.25l8 4.5"/>',
 		'posts' => '<path d="M5 3h14v18H5zm3 5h8m-8 4h8m-8 4h5"/>',

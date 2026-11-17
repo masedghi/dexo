@@ -1,933 +1,1529 @@
+# Copyright (C) 2026 Dexo
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.4.0\n"
-"Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
+"Project-Id-Version: Dexo 0.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dexo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-17T22:12:07+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dexo\n"
 
-msgid "(Untitled)"
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: dexo.php
+msgid "Dexo"
 msgstr ""
 
-msgid "A static page"
+#. Plugin URI of the plugin
+#: dexo.php
+msgid "https://github.com/masedghi/dexo"
 msgstr ""
 
-msgid "Access restricted"
+#. Description of the plugin
+#: dexo.php
+msgid "A standalone operations dashboard for WooCommerce orders, product inventory, and store teams."
 msgstr ""
 
-msgid "Action"
-msgstr ""
-
-msgid "Activate WooCommerce to use the dashboard."
-msgstr ""
-
-msgid "Add an internal note"
-msgstr ""
-
-msgid "Add link"
-msgstr ""
-
-msgid "Add note"
-msgstr ""
-
-msgid "Add term"
-msgstr ""
-
-msgid "Add user"
-msgstr ""
-
-msgid "All"
-msgstr ""
-
-msgid "All orders"
-msgstr ""
-
-msgid "All products"
-msgstr ""
-
-msgid "All statuses"
-msgstr ""
-
-msgid "Allow comments on new posts"
-msgstr ""
-
-msgid "Allow search engines to index this site"
-msgstr ""
-
-msgid "Alternative text"
-msgstr ""
-
-msgid "Amount"
-msgstr ""
-
-msgid "An email confirmation is pending."
-msgstr ""
-
-msgid "Another update changed this order. Review the current values and try again."
-msgstr ""
-
-msgid "Another update changed this product. Review the current values and try again."
-msgstr ""
-
-msgid "Apply"
-msgstr ""
-
-msgid "Approve"
-msgstr ""
-
-msgid "Approved"
-msgstr ""
-
-msgid "Ask your store administrator to assign a Dexo role to your account."
-msgstr ""
-
-msgid "Assign menu"
-msgstr ""
-
-msgid "Automatically close comments on old posts"
-msgstr ""
-
-msgid "Back to order"
-msgstr ""
-
-msgid "Block navigation"
-msgstr ""
-
-msgid "Body (text or basic HTML)"
-msgstr ""
-
-msgid "Caption"
-msgstr ""
-
-msgid "Categories"
-msgstr ""
-
-msgid "Changes saved."
-msgstr ""
-
-msgid "Classic menu"
-msgstr ""
-
-msgid "Close comments after this many days"
-msgstr ""
-
-msgid "Close details"
-msgstr ""
-
-msgid "Close menu"
-msgstr ""
-
-msgid "Comment author must fill out name and email"
-msgstr ""
-
-msgid "Comment author must have a previously approved comment"
-msgstr ""
-
-msgid "Comments"
-msgstr ""
-
-msgid "Comments must be manually approved"
-msgstr ""
-
-msgid "Complete all required fields."
-msgstr ""
-
-msgid "Confirm an allowed deletion."
-msgstr ""
-
-msgid "Confirm deletion"
-msgstr ""
-
-msgid "Confirm new password"
-msgstr ""
-
-msgid "Confirm this privacy request before processing."
-msgstr ""
-
-msgid "Confirm your email change"
-msgstr ""
-
-msgid "Confirm your email change using this link:"
-msgstr ""
-
-msgid "Connected to your store"
-msgstr ""
-
-msgid "Content"
-msgstr ""
-
-msgid "Create menu"
-msgstr ""
-
-msgid "Create user and send setup email"
-msgstr ""
-
-msgid "Crop thumbnails to exact dimensions"
-msgstr ""
-
-msgid "Current password (required for email or password changes)"
-msgstr ""
-
-msgid "Customer"
-msgstr ""
-
-msgid "Dashboard"
-msgstr ""
-
-msgid "Database"
-msgstr ""
-
-msgid "Date"
-msgstr ""
-
-msgid "Date format"
-msgstr ""
-
-msgid "Default comment settings apply to new posts. Existing posts keep their own comment setting."
-msgstr ""
-
-msgid "Delete term"
-msgstr ""
-
-msgid "Description"
-msgstr ""
-
-msgid "Details"
-msgstr ""
-
-msgid "Dexo workspace"
-msgstr ""
-
-msgid "Dexo · Catalog"
-msgstr ""
-
-msgid "Dexo · Orders"
-msgstr ""
-
-msgid "Dexo · Warehouse"
-msgstr ""
-
-msgid "Disallowed words (one per line)"
-msgstr ""
-
-msgid "Discussion settings"
-msgstr ""
-
-msgid "Display name"
-msgstr ""
-
-msgid "Download export"
-msgstr ""
-
-msgid "Edit term"
-msgstr ""
-
-msgid "Edit user"
-msgstr ""
-
-msgid "Email"
-msgstr ""
-
-msgid "Email when a comment is held for moderation"
-msgstr ""
-
-msgid "Email when a comment is posted"
-msgstr ""
-
-msgid "Enable threaded comments"
-msgstr ""
-
-msgid "Enter a label and a valid position."
-msgstr ""
-
-msgid "Enter a label, valid link URL, and position."
-msgstr ""
-
-msgid "Enter a name and a valid parent."
-msgstr ""
-
-msgid "Enter a name and unused valid email address."
-msgstr ""
-
-msgid "Enter a name and valid email address."
-msgstr ""
-
-msgid "Enter a name."
-msgstr ""
-
-msgid "Enter a non-negative price without thousands separators."
-msgstr ""
-
-msgid "Enter a note of up to 2,000 characters."
-msgstr ""
-
-msgid "Enter a number within the allowed range."
-msgstr ""
-
-msgid "Enter a reply to an active comment."
-msgstr ""
-
-msgid "Enter a title."
-msgstr ""
-
-msgid "Enter a tracking code of up to 120 characters."
-msgstr ""
-
-msgid "Enter a valid email address."
-msgstr ""
-
-msgid "Enter a valid link URL."
-msgstr ""
-
-msgid "Enter a valid username."
-msgstr ""
-
-msgid "Enter a whole stock quantity."
-msgstr ""
-
-msgid "Enter the content in the body field."
-msgstr ""
-
-msgid "Environment"
-msgstr ""
-
-msgid "Erase personal data"
-msgstr ""
-
-msgid "Erasure changes personal data according to WordPress and plugin retention rules. This does not delete the user account."
-msgstr ""
-
-msgid "Everything,"
-msgstr ""
-
-msgid "Export personal data"
-msgstr ""
-
-msgid "File type"
-msgstr ""
-
-msgid "Filter orders"
-msgstr ""
-
-msgid "Find products"
-msgstr ""
-
-msgid "First name"
-msgstr ""
-
-msgid "Friday"
-msgstr ""
-
-msgid "General settings"
-msgstr ""
-
-msgid "Generate export"
-msgstr ""
-
-msgid "Hold for moderation"
-msgstr ""
-
-msgid "Homepage"
-msgstr ""
-
-msgid "Homepage displays"
-msgstr ""
-
-msgid "I confirm processing this verified erasure request."
-msgstr ""
-
-msgid "Image or PDF"
-msgstr ""
-
-msgid "Image sizes apply to new uploads. Existing images keep their generated sizes."
-msgstr ""
-
-msgid "Internal notes"
-msgstr ""
-
-msgid "Inventory"
-msgstr ""
-
-msgid "Item"
-msgstr ""
-
-msgid "Keep current UTC offset"
-msgstr ""
-
-msgid "Keep existing roles / use default"
-msgstr ""
-
-msgid "Large maximum height"
-msgstr ""
-
-msgid "Large maximum width"
-msgstr ""
-
-msgid "Last name"
-msgstr ""
-
-msgid "Latest posts"
-msgstr ""
-
-msgid "Link URL"
-msgstr ""
-
-msgid "Link text"
-msgstr ""
-
-msgid "Manage your store from the first order to the final delivery."
-msgstr ""
-
-msgid "Mark as spam"
-msgstr ""
-
-msgid "Media file"
-msgstr ""
-
-msgid "Media library"
-msgstr ""
-
-msgid "Media settings"
-msgstr ""
-
-msgid "Medium maximum height"
-msgstr ""
-
-msgid "Medium maximum width"
-msgstr ""
-
-msgid "Menu name"
-msgstr ""
-
-msgid "Menu type"
-msgstr ""
-
-msgid "Menus"
-msgstr ""
-
-msgid "Moderation words (one per line)"
-msgstr ""
-
-msgid "Monday"
-msgstr ""
-
-msgid "Move to trash"
-msgstr ""
-
-msgid "My account"
-msgstr ""
-
-msgid "Name"
-msgstr ""
-
-msgid "Navigation menus"
-msgstr ""
-
-msgid "New page"
-msgstr ""
-
-msgid "New password (leave empty to keep it)"
-msgstr ""
-
-msgid "New post"
-msgstr ""
-
-msgid "New privacy request"
-msgstr ""
-
-msgid "New status"
-msgstr ""
-
-msgid "Next"
-msgstr ""
-
-msgid "No orders found."
-msgstr ""
-
-msgid "No products found."
-msgstr ""
-
-msgid "No records found."
-msgstr ""
-
-msgid "None"
-msgstr ""
-
+#: dexo.php:46
 msgid "Open Dexo"
 msgstr ""
 
-msgid "Open Site Editor"
+#: dexo.php:69
+#: includes/panel.php:253
+msgid "Dexo workspace"
 msgstr ""
 
-msgid "Open WordPress editor"
+#: dexo.php:70
+msgid "Everything,"
 msgstr ""
 
-msgid "Open complete Site Health"
+#: dexo.php:70
+msgid "in its place."
 msgstr ""
 
-msgid "Open file"
+#: dexo.php:71
+msgid "Manage your store from the first order to the final delivery."
 msgstr ""
 
-msgid "Open menu"
-msgstr ""
-
-msgid "Open parent product"
-msgstr ""
-
-msgid "Order"
-msgstr ""
-
-msgid "Order ID"
-msgstr ""
-
-msgid "Order items"
-msgstr ""
-
-msgid "Order status"
-msgstr ""
-
-msgid "Order total"
-msgstr ""
-
-msgid "Order unavailable."
-msgstr ""
-
-msgid "Orders"
-msgstr ""
-
-msgid "Organize uploads into month and year folders"
-msgstr ""
-
-msgid "Packing slip"
-msgstr ""
-
-msgid "Page"
-msgstr ""
-
-msgid "Page %1$s of %2$s"
-msgstr ""
-
-msgid "Page unavailable"
-msgstr ""
-
-msgid "Pages"
-msgstr ""
-
-msgid "Pagination"
-msgstr ""
-
-msgid "Parent category"
-msgstr ""
-
-msgid "Parent item"
-msgstr ""
-
-msgid "Pending"
-msgstr ""
-
-msgid "Place this navigation in your header or footer using the Site Editor."
-msgstr ""
-
-msgid "Position"
-msgstr ""
-
-msgid "Position among siblings"
-msgstr ""
-
-msgid "Post"
-msgstr ""
-
-msgid "Posts"
-msgstr ""
-
-msgid "Posts page"
-msgstr ""
-
-msgid "Posts per page"
-msgstr ""
-
-msgid "Previous"
-msgstr ""
-
-msgid "Price"
-msgstr ""
-
-msgid "Pricing"
-msgstr ""
-
-msgid "Print"
-msgstr ""
-
-msgid "Privacy"
-msgstr ""
-
-msgid "Privacy policy page"
-msgstr ""
-
-msgid "Process erasure"
-msgstr ""
-
-msgid "Processing completed."
-msgstr ""
-
-msgid "Processing failed. Try again or review the request."
-msgstr ""
-
-msgid "Processing…"
-msgstr ""
-
-msgid "Product"
-msgstr ""
-
-msgid "Product name or exact SKU"
-msgstr ""
-
-msgid "Product unavailable."
-msgstr ""
-
-msgid "Products"
-msgstr ""
-
-msgid "Quantity"
-msgstr ""
-
-msgid "Reading settings"
-msgstr ""
-
-msgid "Regular price"
-msgstr ""
-
-msgid "Regular prices can be edited for simple products and individual variations."
-msgstr ""
-
-msgid "Remove item and its child links"
-msgstr ""
-
-msgid "Remove this menu item"
-msgstr ""
-
-msgid "Reply"
-msgstr ""
-
-msgid "Request type"
-msgstr ""
-
-msgid "Resend confirmation"
-msgstr ""
-
-msgid "Restore from spam"
-msgstr ""
-
-msgid "Restore from trash"
-msgstr ""
-
-msgid "Role"
-msgstr ""
-
-msgid "Roles"
-msgstr ""
-
-msgid "SKU"
-msgstr ""
-
-msgid "Saturday"
-msgstr ""
-
-msgid "Save changes"
-msgstr ""
-
-msgid "Save inventory"
-msgstr ""
-
-msgid "Save price"
-msgstr ""
-
-msgid "Save status"
-msgstr ""
-
-msgid "Save tracking code"
-msgstr ""
-
-msgid "Search"
-msgstr ""
-
-msgid "Search by title"
-msgstr ""
-
-msgid "Search orders by ID…"
-msgstr ""
-
-msgid "Search users"
-msgstr ""
-
-msgid "Select a homepage and a different posts page."
-msgstr ""
-
-msgid "Select a location"
-msgstr ""
-
-msgid "Select a page"
-msgstr ""
-
-msgid "Select a valid option."
-msgstr ""
-
-msgid "Select a valid parent item."
-msgstr ""
-
-msgid "Select an action"
-msgstr ""
-
-msgid "Select an image or PDF to upload."
-msgstr ""
-
-msgid "Send confirmation request"
-msgstr ""
-
-msgid "Send password reset"
-msgstr ""
-
-msgid "Send reply"
-msgstr ""
-
-msgid "Send this user a password reset link."
-msgstr ""
-
-msgid "Shipment"
-msgstr ""
-
-msgid "Shipment tracking updated in Dexo."
-msgstr ""
-
-msgid "Sign in with your work account."
-msgstr ""
-
-msgid "Sign in · Dexo"
-msgstr ""
-
-msgid "Sign out"
-msgstr ""
-
-msgid "Site health"
-msgstr ""
-
-msgid "Site language"
-msgstr ""
-
-msgid "Site management"
-msgstr ""
-
-msgid "Site title"
-msgstr ""
-
-msgid "Skip to content"
-msgstr ""
-
-msgid "Slug"
-msgstr ""
-
-msgid "Spam"
-msgstr ""
-
-msgid "Status"
-msgstr ""
-
-msgid "Stock"
-msgstr ""
-
-msgid "Stock quantity"
-msgstr ""
-
-msgid "Stock status"
-msgstr ""
-
-msgid "Store"
-msgstr ""
-
-msgid "Store management"
-msgstr ""
-
-msgid "Store manager"
-msgstr ""
-
-msgid "Sunday"
-msgstr ""
-
-msgid "Tagline"
-msgstr ""
-
-msgid "Tags"
-msgstr ""
-
-msgid "Team member"
-msgstr ""
-
-msgid "Team workspace"
-msgstr ""
-
-msgid "The note could not be saved."
-msgstr ""
-
-msgid "The order status could not be saved."
-msgstr ""
-
-msgid "The stock quantity could not be saved."
-msgstr ""
-
-msgid "Theme"
-msgstr ""
-
-msgid "Theme location"
-msgstr ""
-
-msgid "This confirmation link is invalid or expired."
-msgstr ""
-
-msgid "This navigation contains advanced blocks. Use the Site Editor to preserve them."
-msgstr ""
-
-msgid "This page does not accept changes."
-msgstr ""
-
-msgid "This page is unavailable for your account."
-msgstr ""
-
-msgid "This product does not manage its own stock quantity."
-msgstr ""
-
-msgid "This product has a sale price. Its regular price must stay above that price."
-msgstr ""
-
-msgid "This record changed. Review it and try again."
-msgstr ""
-
-msgid "This record is being updated. Try again in a moment."
-msgstr ""
-
-msgid "This record is unavailable."
-msgstr ""
-
-msgid "This status change is unavailable in Dexo."
-msgstr ""
-
-msgid "This stock status cannot be applied."
-msgstr ""
-
-msgid "This theme uses navigation blocks. Place its navigation in the Site Editor."
-msgstr ""
-
-msgid "This variation uses the parent product’s stock."
-msgstr ""
-
-msgid "Threaded comment levels"
-msgstr ""
-
-msgid "Thumbnail height"
-msgstr ""
-
-msgid "Thumbnail width"
-msgstr ""
-
-msgid "Thursday"
-msgstr ""
-
-msgid "Time format"
-msgstr ""
-
-msgid "Timezone"
-msgstr ""
-
-msgid "Title"
-msgstr ""
-
-msgid "Top level"
-msgstr ""
-
-msgid "Total"
-msgstr ""
-
-msgid "Track shipment"
-msgstr ""
-
-msgid "Tracking code"
-msgstr ""
-
-msgid "Trash"
-msgstr ""
-
-msgid "Tuesday"
-msgstr ""
-
-msgid "Updated in Dexo."
-msgstr ""
-
-msgid "Upload media"
-msgstr ""
-
-msgid "Use a password of at least 12 characters and repeat it exactly."
-msgstr ""
-
-msgid "Use another administrator account to change your own role."
-msgstr ""
-
-msgid "Use the WordPress editor for this record to preserve its blocks or custom markup."
-msgstr ""
-
-msgid "Username"
-msgstr ""
-
-msgid "Users"
-msgstr ""
-
-msgid "Users must be registered and logged in to comment"
-msgstr ""
-
-msgid "Variations"
-msgstr ""
-
-msgid "View store"
-msgstr ""
-
-msgid "Wednesday"
-msgstr ""
-
-msgid "Week starts on"
-msgstr ""
-
+#: dexo.php:85
 msgid "Welcome to Dexo"
 msgstr ""
 
-msgid "WooCommerce could not save the change. Reload the order and check its current state."
+#: dexo.php:86
+msgid "Sign in with your work account."
 msgstr ""
 
-msgid "WooCommerce could not save the change. Reload the product and check its current state."
+#: dexo.php:93
+msgid "Sign in · Dexo"
 msgstr ""
 
-msgid "WooCommerce is required"
+#: includes/access.php:10
+msgid "Dexo · Orders"
 msgstr ""
 
-msgid "WordPress could not save this record."
+#: includes/access.php:14
+msgid "Dexo · Warehouse"
 msgstr ""
 
-msgid "WordPress emails a confirmation link to the person before processing."
+#: includes/access.php:18
+msgid "Dexo · Catalog"
 msgstr ""
 
-msgid "You cannot assign this role."
+#: includes/admin.php:13
+msgid "My account"
 msgstr ""
 
+#: includes/admin.php:14
+msgid "Users"
+msgstr ""
+
+#: includes/admin.php:15
+msgid "Comments"
+msgstr ""
+
+#: includes/admin.php:16
+msgid "Categories"
+msgstr ""
+
+#: includes/admin.php:17
+msgid "Tags"
+msgstr ""
+
+#: includes/admin.php:18
+msgid "Menus"
+msgstr ""
+
+#: includes/admin.php:19
+msgid "General settings"
+msgstr ""
+
+#: includes/admin.php:20
+msgid "Reading settings"
+msgstr ""
+
+#: includes/admin.php:21
+msgid "Discussion settings"
+msgstr ""
+
+#: includes/admin.php:22
+msgid "Media settings"
+msgstr ""
+
+#: includes/admin.php:23
+msgid "Site health"
+msgstr ""
+
+#: includes/admin.php:24
+msgid "Privacy"
+msgstr ""
+
+#: includes/admin.php:29
+msgid "Site management"
+msgstr ""
+
+#: includes/admin.php:41
+#: includes/community.php:140
+#: includes/content.php:165
+#: includes/content.php:186
+#: includes/content.php:189
+#: includes/orders.php:224
+#: includes/privacy.php:63
+#: includes/privacy.php:100
+#: includes/products.php:176
+#: includes/users.php:60
+#: includes/users.php:66
 msgid "You cannot make this change."
 msgstr ""
 
+#: includes/admin.php:45
+#: includes/panel.php:313
+msgid "This record is being updated. Try again in a moment."
+msgstr ""
+
+#: includes/admin.php:60
+#: includes/content.php:196
+msgid "This record changed. Review it and try again."
+msgstr ""
+
+#: includes/admin.php:74
+#: includes/content.php:157
+msgid "Save changes"
+msgstr ""
+
+#: includes/admin.php:98
+msgid "Select a page"
+msgstr ""
+
+#: includes/community.php:21
+msgid "All"
+msgstr ""
+
+#: includes/community.php:21
+msgid "Pending"
+msgstr ""
+
+#: includes/community.php:21
+msgid "Approved"
+msgstr ""
+
+#: includes/community.php:21
+msgid "Spam"
+msgstr ""
+
+#: includes/community.php:21
+msgid "Trash"
+msgstr ""
+
+#: includes/community.php:28
+#: includes/community.php:30
+#: includes/community.php:99
+#: includes/community.php:100
+#: includes/content.php:62
+#: includes/users.php:26
+msgid "Search"
+msgstr ""
+
+#: includes/community.php:29
+#: includes/content.php:70
+#: includes/content.php:149
+#: includes/orders.php:60
+#: includes/orders.php:76
+#: includes/orders.php:90
+msgid "Status"
+msgstr ""
+
+#: includes/community.php:37
+msgid "Approve"
+msgstr ""
+
+#: includes/community.php:37
+msgid "Hold for moderation"
+msgstr ""
+
+#: includes/community.php:37
+msgid "Mark as spam"
+msgstr ""
+
+#: includes/community.php:37
+msgid "Move to trash"
+msgstr ""
+
+#: includes/community.php:38
+msgid "Restore from spam"
+msgstr ""
+
+#: includes/community.php:39
+msgid "Restore from trash"
+msgstr ""
+
+#: includes/community.php:40
+msgid "Action"
+msgstr ""
+
+#: includes/community.php:40
+msgid "Select an action"
+msgstr ""
+
+#: includes/community.php:41
+#: includes/reports.php:145
+msgid "Apply"
+msgstr ""
+
+#: includes/community.php:45
+msgid "Reply"
+msgstr ""
+
+#: includes/community.php:46
+msgid "Send reply"
+msgstr ""
+
+#: includes/community.php:54
+#: includes/community.php:139
+#: includes/content.php:114
+#: includes/content.php:119
+#: includes/content.php:193
+#: includes/menus.php:156
+#: includes/menus.php:176
+#: includes/menus.php:214
+#: includes/menus.php:225
+msgid "This record is unavailable."
+msgstr ""
+
+#: includes/community.php:59
+msgid "Enter a reply to an active comment."
+msgstr ""
+
+#: includes/community.php:71
+#: includes/menus.php:166
+#: includes/menus.php:172
+#: includes/menus.php:251
+#: includes/privacy.php:53
+#: includes/privacy.php:69
+#: includes/settings.php:114
+msgid "Select a valid option."
+msgstr ""
+
+#: includes/community.php:81
+#: includes/community.php:147
+#: includes/content.php:222
+#: includes/menus.php:178
+msgid "WordPress could not save this record."
+msgstr ""
+
+#: includes/community.php:102
+#: includes/community.php:116
+#: includes/users.php:27
+msgid "Name"
+msgstr ""
+
+#: includes/community.php:102
+#: includes/community.php:117
+msgid "Slug"
+msgstr ""
+
+#: includes/community.php:102
+#: includes/community.php:124
+msgid "Parent category"
+msgstr ""
+
+#: includes/community.php:114
+msgid "Edit term"
+msgstr ""
+
+#: includes/community.php:114
+msgid "Add term"
+msgstr ""
+
+#: includes/community.php:118
+msgid "Description"
+msgstr ""
+
+#: includes/community.php:120
+msgid "None"
+msgstr ""
+
+#: includes/community.php:130
+msgid "Confirm deletion"
+msgstr ""
+
+#: includes/community.php:131
+msgid "Delete term"
+msgstr ""
+
+#: includes/community.php:144
+msgid "Confirm an allowed deletion."
+msgstr ""
+
+#: includes/community.php:152
+msgid "Enter a name and a valid parent."
+msgstr ""
+
+#: includes/content.php:9
+msgid "Posts"
+msgstr ""
+
+#: includes/content.php:9
+msgid "Post"
+msgstr ""
+
+#: includes/content.php:9
+msgid "New post"
+msgstr ""
+
+#: includes/content.php:10
+msgid "Pages"
+msgstr ""
+
+#: includes/content.php:10
+msgid "Page"
+msgstr ""
+
+#: includes/content.php:10
+msgid "New page"
+msgstr ""
+
+#: includes/content.php:11
+msgid "Media library"
+msgstr ""
+
+#: includes/content.php:11
+msgid "Media file"
+msgstr ""
+
+#: includes/content.php:11
+#: includes/content.php:138
+msgid "Upload media"
+msgstr ""
+
+#: includes/content.php:19
+msgid "Content"
+msgstr ""
+
+#: includes/content.php:59
+msgid "Search by title"
+msgstr ""
+
+#: includes/content.php:67
+msgid "No records found."
+msgstr ""
+
+#: includes/content.php:70
+#: includes/content.php:140
+msgid "Title"
+msgstr ""
+
+#: includes/content.php:70
+msgid "File type"
+msgstr ""
+
+#: includes/content.php:70
+#: includes/content.php:79
+#: includes/orders.php:78
+#: includes/orders.php:94
+#: includes/reports.php:140
+msgid "Date"
+msgstr ""
+
+#: includes/content.php:76
+#: includes/content.php:126
+msgid "(Untitled)"
+msgstr ""
+
+#: includes/content.php:127
+#: includes/content.php:208
+msgid "Use the WordPress editor for this record to preserve its blocks or custom markup."
+msgstr ""
+
+#: includes/content.php:128
+msgid "Open WordPress editor"
+msgstr ""
+
+#: includes/content.php:137
+msgid "Image or PDF"
+msgstr ""
+
+#: includes/content.php:143
+msgid "Alternative text"
+msgstr ""
+
+#: includes/content.php:145
+msgid "Caption"
+msgstr ""
+
+#: includes/content.php:146
+msgid "Open file"
+msgstr ""
+
+#: includes/content.php:148
+msgid "Body (text or basic HTML)"
+msgstr ""
+
+#: includes/content.php:170
+msgid "Select an image or PDF to upload."
+msgstr ""
+
+#: includes/content.php:201
+msgid "Enter a title."
+msgstr ""
+
+#: includes/content.php:212
 msgid "You cannot use this publication status."
 msgstr ""
 
-msgid "Your current password is incorrect."
+#: includes/content.php:215
+msgid "Enter the content in the body field."
 msgstr ""
 
+#: includes/menus.php:29
+msgid "This navigation contains advanced blocks. Use the Site Editor to preserve them."
+msgstr ""
+
+#: includes/menus.php:56
+msgid "Navigation menus"
+msgstr ""
+
+#: includes/menus.php:58
+#: includes/menus.php:67
+msgid "Classic menu"
+msgstr ""
+
+#: includes/menus.php:61
+#: includes/menus.php:67
+msgid "Block navigation"
+msgstr ""
+
+#: includes/menus.php:66
+#: includes/menus.php:78
+#: includes/menus.php:119
+msgid "Menu name"
+msgstr ""
+
+#: includes/menus.php:67
+msgid "Menu type"
+msgstr ""
+
+#: includes/menus.php:68
+msgid "Create menu"
+msgstr ""
+
+#: includes/menus.php:80
+#: includes/menus.php:123
+msgid "Top level"
+msgstr ""
+
+#: includes/menus.php:86
+#: includes/menus.php:96
+#: includes/menus.php:133
+msgid "Link text"
+msgstr ""
+
+#: includes/menus.php:87
+#: includes/menus.php:97
+#: includes/menus.php:134
+msgid "Link URL"
+msgstr ""
+
+#: includes/menus.php:88
+#: includes/menus.php:98
+#: includes/menus.php:136
+msgid "Parent item"
+msgstr ""
+
+#: includes/menus.php:89
+#: includes/menus.php:99
+msgid "Position"
+msgstr ""
+
+#: includes/menus.php:90
+msgid "Remove this menu item"
+msgstr ""
+
+#: includes/menus.php:95
+#: includes/menus.php:100
+#: includes/menus.php:139
+msgid "Add link"
+msgstr ""
+
+#: includes/menus.php:105
+msgid "Theme location"
+msgstr ""
+
+#: includes/menus.php:105
+msgid "Select a location"
+msgstr ""
+
+#: includes/menus.php:106
+msgid "Assign menu"
+msgstr ""
+
+#: includes/menus.php:108
+msgid "This theme uses navigation blocks. Place its navigation in the Site Editor."
+msgstr ""
+
+#: includes/menus.php:137
+msgid "Position among siblings"
+msgstr ""
+
+#: includes/menus.php:138
+msgid "Remove item and its child links"
+msgstr ""
+
+#: includes/menus.php:142
+msgid "Place this navigation in your header or footer using the Site Editor."
+msgstr ""
+
+#: includes/menus.php:142
+msgid "Open Site Editor"
+msgstr ""
+
+#: includes/menus.php:151
+#: includes/menus.php:160
+#: includes/menus.php:209
+#: includes/menus.php:219
+msgid "Enter a name."
+msgstr ""
+
+#: includes/menus.php:183
+#: includes/menus.php:230
+msgid "Select a valid parent item."
+msgstr ""
+
+#: includes/menus.php:189
+msgid "Enter a label and a valid position."
+msgstr ""
+
+#: includes/menus.php:196
+msgid "Enter a valid link URL."
+msgstr ""
+
+#: includes/menus.php:234
+msgid "Enter a label, valid link URL, and position."
+msgstr ""
+
+#: includes/orders.php:21
+#: includes/orders.php:228
+msgid "Order unavailable."
+msgstr ""
+
+#: includes/orders.php:57
+#: includes/orders.php:74
+msgid "Order ID"
+msgstr ""
+
+#: includes/orders.php:57
+msgid "Search orders by ID…"
+msgstr ""
+
+#: includes/orders.php:61
+msgid "All statuses"
+msgstr ""
+
+#: includes/orders.php:66
+msgid "Filter orders"
+msgstr ""
+
+#: includes/orders.php:70
+msgid "No orders found."
+msgstr ""
+
+#: includes/orders.php:75
+#: includes/orders.php:88
+#: includes/orders.php:153
+msgid "Customer"
+msgstr ""
+
+#: includes/orders.php:77
+#: includes/orders.php:91
+#: includes/orders.php:137
+msgid "Order items"
+msgstr ""
+
+#: includes/orders.php:79
+#: includes/orders.php:95
+msgid "Total"
+msgstr ""
+
+#: includes/orders.php:80
+#: includes/orders.php:96
+#: includes/products.php:65
+#: includes/products.php:81
+msgid "Details"
+msgstr ""
+
+#: includes/orders.php:122
+msgid "All orders"
+msgstr ""
+
+#: includes/orders.php:129
+msgid "Print"
+msgstr ""
+
+#: includes/orders.php:130
+msgid "Back to order"
+msgstr ""
+
+#: includes/orders.php:132
+#: includes/panel.php:151
+msgid "Packing slip"
+msgstr ""
+
+#: includes/orders.php:139
+msgid "Item"
+msgstr ""
+
+#: includes/orders.php:139
+msgid "Quantity"
+msgstr ""
+
+#: includes/orders.php:139
+msgid "Amount"
+msgstr ""
+
+#: includes/orders.php:148
+msgid "Order total"
+msgstr ""
+
+#: includes/orders.php:165
+#: includes/reports.php:129
+msgid "Order status"
+msgstr ""
+
+#: includes/orders.php:169
+msgid "New status"
+msgstr ""
+
+#: includes/orders.php:177
+msgid "Save status"
+msgstr ""
+
+#: includes/orders.php:182
+msgid "Shipment"
+msgstr ""
+
+#: includes/orders.php:186
+msgid "Tracking code"
+msgstr ""
+
+#: includes/orders.php:188
+msgid "Track shipment"
+msgstr ""
+
+#: includes/orders.php:189
+msgid "Save tracking code"
+msgstr ""
+
+#: includes/orders.php:195
+msgid "Internal notes"
+msgstr ""
+
+#: includes/orders.php:204
+msgid "Add an internal note"
+msgstr ""
+
+#: includes/orders.php:205
+msgid "Add note"
+msgstr ""
+
+#: includes/orders.php:239
+msgid "This status change is unavailable in Dexo."
+msgstr ""
+
+#: includes/orders.php:242
+#: includes/orders.php:258
+msgid "Another update changed this order. Review the current values and try again."
+msgstr ""
+
+#: includes/orders.php:244
+msgid "Updated in Dexo."
+msgstr ""
+
+#: includes/orders.php:245
+msgid "The order status could not be saved."
+msgstr ""
+
+#: includes/orders.php:255
+msgid "Enter a tracking code of up to 120 characters."
+msgstr ""
+
+#: includes/orders.php:266
+msgid "Shipment tracking updated in Dexo."
+msgstr ""
+
+#: includes/orders.php:271
+msgid "Enter a note of up to 2,000 characters."
+msgstr ""
+
+#: includes/orders.php:274
+msgid "The note could not be saved."
+msgstr ""
+
+#: includes/orders.php:279
+msgid "WooCommerce could not save the change. Reload the order and check its current state."
+msgstr ""
+
+#: includes/panel.php:44
+msgid "Overview"
+msgstr ""
+
+#: includes/panel.php:45
+msgid "Reports"
+msgstr ""
+
+#: includes/panel.php:47
+#: includes/reports.php:140
+msgid "Orders"
+msgstr ""
+
+#: includes/panel.php:51
+msgid "Products"
+msgstr ""
+
+#: includes/panel.php:80
+msgid "Access restricted"
+msgstr ""
+
+#: includes/panel.php:81
+msgid "Ask your store administrator to assign a Dexo role to your account."
+msgstr ""
+
+#: includes/panel.php:87
+msgid "WooCommerce is required"
+msgstr ""
+
+#: includes/panel.php:88
+msgid "Activate WooCommerce to use the dashboard."
+msgstr ""
+
+#: includes/panel.php:98
+#: includes/panel.php:131
+msgid "Page unavailable"
+msgstr ""
+
+#: includes/panel.php:99
+#: includes/panel.php:132
+msgid "This page is unavailable for your account."
+msgstr ""
+
+#: includes/panel.php:112
 msgid "Your form expired. Reload the page and try again."
 msgstr ""
 
+#: includes/panel.php:114
+msgid "This page does not accept changes."
+msgstr ""
+
+#: includes/panel.php:140
+msgid "Changes saved."
+msgstr ""
+
+#: includes/panel.php:213
+msgid "Skip to content"
+msgstr ""
+
+#: includes/panel.php:215
+msgid "Close menu"
+msgstr ""
+
+#: includes/panel.php:219
+msgid "Store management"
+msgstr ""
+
+#: includes/panel.php:223
+msgid "Team workspace"
+msgstr ""
+
+#: includes/panel.php:226
+msgid "Dashboard"
+msgstr ""
+
+#: includes/panel.php:229
+msgid "Store"
+msgstr ""
+
+#: includes/panel.php:244
+msgid "Store manager"
+msgstr ""
+
+#: includes/panel.php:244
+msgid "Team member"
+msgstr ""
+
+#: includes/panel.php:245
+msgid "Sign out"
+msgstr ""
+
+#: includes/panel.php:252
+msgid "Open menu"
+msgstr ""
+
+#: includes/panel.php:259
+msgid "View store"
+msgstr ""
+
+#: includes/panel.php:265
+msgid "Connected to your store"
+msgstr ""
+
+#: includes/panel.php:279
+msgid "Order"
+msgstr ""
+
+#: includes/panel.php:279
+#: includes/products.php:62
+msgid "Product"
+msgstr ""
+
+#: includes/panel.php:284
+msgid "Close details"
+msgstr ""
+
+#: includes/panel.php:326
+msgid "Pagination"
+msgstr ""
+
+#: includes/panel.php:328
+msgid "Previous"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages.
+#: includes/panel.php:331
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: includes/panel.php:333
+msgid "Next"
+msgstr ""
+
+#: includes/privacy.php:10
+msgid "Privacy policy page"
+msgstr ""
+
+#: includes/privacy.php:13
+msgid "Export personal data"
+msgstr ""
+
+#: includes/privacy.php:14
+msgid "Erase personal data"
+msgstr ""
+
+#: includes/privacy.php:17
+msgid "New privacy request"
+msgstr ""
+
+#: includes/privacy.php:18
+#: includes/users.php:27
+#: includes/users.php:41
+#: includes/users.php:104
+msgid "Email"
+msgstr ""
+
+#: includes/privacy.php:19
+msgid "Request type"
+msgstr ""
+
+#: includes/privacy.php:20
+msgid "WordPress emails a confirmation link to the person before processing."
+msgstr ""
+
+#: includes/privacy.php:21
+msgid "Send confirmation request"
+msgstr ""
+
+#: includes/privacy.php:33
+msgid "Erasure changes personal data according to WordPress and plugin retention rules. This does not delete the user account."
+msgstr ""
+
+#: includes/privacy.php:34
+msgid "I confirm processing this verified erasure request."
+msgstr ""
+
+#: includes/privacy.php:36
+msgid "Generate export"
+msgstr ""
+
+#: includes/privacy.php:36
+msgid "Process erasure"
+msgstr ""
+
+#: includes/privacy.php:37
+msgid "Processing…"
+msgstr ""
+
+#: includes/privacy.php:37
+msgid "Processing completed."
+msgstr ""
+
+#: includes/privacy.php:37
+#: includes/privacy.php:102
+msgid "Processing failed. Try again or review the request."
+msgstr ""
+
+#: includes/privacy.php:38
+msgid "Download export"
+msgstr ""
+
+#: includes/privacy.php:41
+msgid "Resend confirmation"
+msgstr ""
+
+#: includes/privacy.php:71
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/privacy.php:85
+#: includes/privacy.php:95
+msgid "Confirm this privacy request before processing."
+msgstr ""
+
+#: includes/products.php:22
+#: includes/products.php:180
+msgid "Product unavailable."
+msgstr ""
+
+#: includes/products.php:53
+msgid "Product name or exact SKU"
+msgstr ""
+
+#: includes/products.php:55
+msgid "Find products"
+msgstr ""
+
+#: includes/products.php:58
+msgid "No products found."
+msgstr ""
+
+#: includes/products.php:63
+#: includes/products.php:79
+msgid "Stock"
+msgstr ""
+
+#: includes/products.php:64
+#: includes/products.php:80
+msgid "Price"
+msgstr ""
+
+#: includes/products.php:110
+msgid "All products"
+msgstr ""
+
+#: includes/products.php:112
+msgid "SKU"
+msgstr ""
+
+#: includes/products.php:118
+msgid "Pricing"
+msgstr ""
+
+#: includes/products.php:122
+msgid "Regular price"
+msgstr ""
+
+#: includes/products.php:125
+msgid "Save price"
+msgstr ""
+
+#: includes/products.php:129
+#: includes/products.php:135
+msgid "Inventory"
+msgstr ""
+
+#: includes/products.php:130
+msgid "This variation uses the parent product’s stock."
+msgstr ""
+
+#: includes/products.php:131
+msgid "Open parent product"
+msgstr ""
+
+#: includes/products.php:140
+msgid "Stock quantity"
+msgstr ""
+
+#: includes/products.php:144
+msgid "Stock status"
+msgstr ""
+
+#: includes/products.php:150
+msgid "Save inventory"
+msgstr ""
+
+#: includes/products.php:156
+msgid "Variations"
+msgstr ""
+
+#: includes/products.php:187
+msgid "Regular prices can be edited for simple products and individual variations."
+msgstr ""
+
+#: includes/products.php:191
+msgid "Enter a non-negative price without thousands separators."
+msgstr ""
+
+#: includes/products.php:199
+msgid "This product has a sale price. Its regular price must stay above that price."
+msgstr ""
+
+#: includes/products.php:206
+msgid "This product does not manage its own stock quantity."
+msgstr ""
+
+#: includes/products.php:209
+msgid "Enter a whole stock quantity."
+msgstr ""
+
+#: includes/products.php:220
+msgid "The stock quantity could not be saved."
+msgstr ""
+
+#: includes/products.php:226
+msgid "This stock status cannot be applied."
+msgstr ""
+
+#: includes/products.php:235
+msgid "WooCommerce could not save the change. Reload the product and check its current state."
+msgstr ""
+
+#: includes/products.php:242
+msgid "Another update changed this product. Review the current values and try again."
+msgstr ""
+
+#: includes/reports.php:13
+msgid "Choose a valid date range of up to 366 days, ending today or earlier."
+msgstr ""
+
+#: includes/reports.php:63
+msgid "Store currency changed. Refresh the report."
+msgstr ""
+
+#: includes/reports.php:80
+msgid "Report expired. Reload the page."
+msgstr ""
+
+#: includes/reports.php:94
+msgid "Could not finish the report. Reload to retry."
+msgstr ""
+
+#: includes/reports.php:117
+msgid "Preparing your report"
+msgstr ""
+
+#: includes/reports.php:117
+msgid "Processing orders in batches. Totals appear when all orders have been processed."
+msgstr ""
+
+#: includes/reports.php:117
+msgid "Reload to continue"
+msgstr ""
+
+#: includes/reports.php:121
+#: includes/reports.php:140
+msgid "Net sales"
+msgstr ""
+
+#: includes/reports.php:121
+#: includes/reports.php:124
+msgid "Excluding shipping and tax"
+msgstr ""
+
+#: includes/reports.php:122
+msgid "Orders placed"
+msgstr ""
+
+#: includes/reports.php:122
+msgid "All order statuses"
+msgstr ""
+
+#: includes/reports.php:123
+msgid "Average net order"
+msgstr ""
+
+#: includes/reports.php:123
+msgid "Paid and refunded orders"
+msgstr ""
+
+#: includes/reports.php:124
+#: includes/reports.php:140
+msgid "Refunds"
+msgstr ""
+
+#: includes/reports.php:125
+msgid "Sales trend"
+msgstr ""
+
+#: includes/reports.php:129
+msgid "Daily net sales; exact values in the table below."
+msgstr ""
+
+#: includes/reports.php:133
+msgid "No orders in this period."
+msgstr ""
+
+#: includes/reports.php:134
+msgid "Best-selling products"
+msgstr ""
+
+#: includes/reports.php:137
+#, php-format
+msgid "%s units"
+msgstr ""
+
+#: includes/reports.php:139
+msgid "No paid products in this period."
+msgstr ""
+
+#: includes/reports.php:140
+msgid "Daily figures and calculation details"
+msgstr ""
+
+#: includes/reports.php:140
+msgid "Orders are grouped by their creation date in the site timezone. Refunds recorded by refresh time reduce the original order period. This is a live operational report, not an accounting statement."
+msgstr ""
+
+#: includes/reports.php:140
+#, php-format
+msgid "Updated: %s · Site timezone: %s"
+msgstr ""
+
+#: includes/reports.php:140
+#, php-format
+msgid "%s orders in other currencies were excluded."
+msgstr ""
+
+#: includes/reports.php:145
+msgid "Your store, in perspective"
+msgstr ""
+
+#: includes/reports.php:145
+msgid "See what is moving your business."
+msgstr ""
+
+#: includes/reports.php:145
+msgid "From"
+msgstr ""
+
+#: includes/reports.php:145
+msgid "To"
+msgstr ""
+
+#: includes/reports.php:145
+msgid "Report period"
+msgstr ""
+
+#: includes/reports.php:145
+#, php-format
+msgid "Last %s days"
+msgstr ""
+
+#: includes/reports.php:146
+#: includes/reports.php:152
+msgid "Could not load the report. Please try again."
+msgstr ""
+
+#: includes/reports.php:149
+#, php-format
+msgid "Hello, %s."
+msgstr ""
+
+#: includes/reports.php:149
+msgid "A clear view. A calmer workday."
+msgstr ""
+
+#: includes/reports.php:149
+msgid "Quick access"
+msgstr ""
+
+#: includes/reports.php:151
+msgid "The last 30 days at a glance"
+msgstr ""
+
+#: includes/reports.php:151
+msgid "View reports"
+msgstr ""
+
+#: includes/reports.php:154
+msgid "Orders to work on"
+msgstr ""
+
+#: includes/reports.php:154
+msgid "View all"
+msgstr ""
+
+#: includes/reports.php:157
+msgid "Everything is up to date."
+msgstr ""
+
+#: includes/reports.php:158
+msgid "Stock to check"
+msgstr ""
+
+#: includes/reports.php:160
+msgid "Out of stock"
+msgstr ""
+
+#: includes/reports.php:161
+msgid "No published products are out of stock."
+msgstr ""
+
+#: includes/settings.php:15
+msgid "Keep current UTC offset"
+msgstr ""
+
+#: includes/settings.php:17
+msgid "Site title"
+msgstr ""
+
+#: includes/settings.php:18
+msgid "Tagline"
+msgstr ""
+
+#: includes/settings.php:19
+msgid "Site language"
+msgstr ""
+
+#: includes/settings.php:20
+msgid "Timezone"
+msgstr ""
+
+#: includes/settings.php:21
+msgid "Date format"
+msgstr ""
+
+#: includes/settings.php:22
+msgid "Time format"
+msgstr ""
+
+#: includes/settings.php:23
+msgid "Week starts on"
+msgstr ""
+
+#: includes/settings.php:27
+msgid "Homepage displays"
+msgstr ""
+
+#: includes/settings.php:27
+msgid "Latest posts"
+msgstr ""
+
+#: includes/settings.php:27
+msgid "A static page"
+msgstr ""
+
+#: includes/settings.php:28
+msgid "Homepage"
+msgstr ""
+
+#: includes/settings.php:29
+msgid "Posts page"
+msgstr ""
+
+#: includes/settings.php:30
+msgid "Posts per page"
+msgstr ""
+
+#: includes/settings.php:31
+msgid "Allow search engines to index this site"
+msgstr ""
+
+#: includes/settings.php:35
+msgid "Allow comments on new posts"
+msgstr ""
+
+#: includes/settings.php:36
+msgid "Comment author must fill out name and email"
+msgstr ""
+
+#: includes/settings.php:37
+msgid "Users must be registered and logged in to comment"
+msgstr ""
+
+#: includes/settings.php:38
+msgid "Comments must be manually approved"
+msgstr ""
+
+#: includes/settings.php:39
+msgid "Comment author must have a previously approved comment"
+msgstr ""
+
+#: includes/settings.php:40
+msgid "Automatically close comments on old posts"
+msgstr ""
+
+#: includes/settings.php:41
+msgid "Close comments after this many days"
+msgstr ""
+
+#: includes/settings.php:42
+msgid "Enable threaded comments"
+msgstr ""
+
+#: includes/settings.php:43
+msgid "Threaded comment levels"
+msgstr ""
+
+#: includes/settings.php:44
+msgid "Email when a comment is posted"
+msgstr ""
+
+#: includes/settings.php:45
+msgid "Email when a comment is held for moderation"
+msgstr ""
+
+#: includes/settings.php:46
+msgid "Moderation words (one per line)"
+msgstr ""
+
+#: includes/settings.php:47
+msgid "Disallowed words (one per line)"
+msgstr ""
+
+#: includes/settings.php:51
+msgid "Thumbnail width"
+msgstr ""
+
+#: includes/settings.php:52
+msgid "Thumbnail height"
+msgstr ""
+
+#: includes/settings.php:53
+msgid "Crop thumbnails to exact dimensions"
+msgstr ""
+
+#: includes/settings.php:54
+msgid "Medium maximum width"
+msgstr ""
+
+#: includes/settings.php:55
+msgid "Medium maximum height"
+msgstr ""
+
+#: includes/settings.php:56
+msgid "Large maximum width"
+msgstr ""
+
+#: includes/settings.php:57
+msgid "Large maximum height"
+msgstr ""
+
+#: includes/settings.php:58
+msgid "Organize uploads into month and year folders"
+msgstr ""
+
+#: includes/settings.php:75
+msgid "Default comment settings apply to new posts. Existing posts keep their own comment setting."
+msgstr ""
+
+#: includes/settings.php:78
+msgid "Image sizes apply to new uploads. Existing images keep their generated sizes."
+msgstr ""
+
+#: includes/settings.php:120
+msgid "Enter a number within the allowed range."
+msgstr ""
+
+#: includes/settings.php:128
+msgid "Complete all required fields."
+msgstr ""
+
+#: includes/settings.php:133
+msgid "Select a homepage and a different posts page."
+msgstr ""
+
+#: includes/settings.php:145
+#: includes/settings.php:146
+msgid "Environment"
+msgstr ""
+
+#: includes/settings.php:146
+msgid "Database"
+msgstr ""
+
+#: includes/settings.php:146
+msgid "Theme"
+msgstr ""
+
+#: includes/settings.php:154
+msgid "Open complete Site Health"
+msgstr ""
+
+#: includes/users.php:25
+msgid "Search users"
+msgstr ""
+
+#: includes/users.php:27
+msgid "Roles"
+msgstr ""
+
+#: includes/users.php:37
+msgid "Edit user"
+msgstr ""
+
+#: includes/users.php:37
+msgid "Add user"
+msgstr ""
+
+#: includes/users.php:39
+msgid "Username"
+msgstr ""
+
+#: includes/users.php:40
+#: includes/users.php:101
+msgid "Display name"
+msgstr ""
+
+#: includes/users.php:42
+#: includes/users.php:102
+msgid "First name"
+msgstr ""
+
+#: includes/users.php:43
+#: includes/users.php:103
+msgid "Last name"
+msgstr ""
+
+#: includes/users.php:47
+msgid "Role"
+msgstr ""
+
+#: includes/users.php:47
+msgid "Keep existing roles / use default"
+msgstr ""
+
+#: includes/users.php:49
+msgid "Create user and send setup email"
+msgstr ""
+
+#: includes/users.php:52
+msgid "Send this user a password reset link."
+msgstr ""
+
+#: includes/users.php:53
+msgid "Send password reset"
+msgstr ""
+
+#: includes/users.php:71
+msgid "Enter a name and valid email address."
+msgstr ""
+
+#: includes/users.php:74
+#: includes/users.php:87
+msgid "You cannot assign this role."
+msgstr ""
+
+#: includes/users.php:77
+msgid "Use another administrator account to change your own role."
+msgstr ""
+
+#: includes/users.php:83
+msgid "Enter a valid username."
+msgstr ""
+
+#: includes/users.php:105
+msgid "New password (leave empty to keep it)"
+msgstr ""
+
+#: includes/users.php:106
+msgid "Confirm new password"
+msgstr ""
+
+#: includes/users.php:107
+msgid "Current password (required for email or password changes)"
+msgstr ""
+
+#: includes/users.php:109
+msgid "An email confirmation is pending."
+msgstr ""
+
+#: includes/users.php:121
+msgid "Enter a name and unused valid email address."
+msgstr ""
+
+#: includes/users.php:124
+msgid "Your current password is incorrect."
+msgstr ""
+
+#: includes/users.php:127
+msgid "Use a password of at least 12 characters and repeat it exactly."
+msgstr ""
+
+#: includes/users.php:139
+msgid "Confirm your email change"
+msgstr ""
+
+#: includes/users.php:139
+msgid "Confirm your email change using this link:"
+msgstr ""
+
+#: includes/users.php:140
 msgid "Your profile was saved, but the confirmation email could not be sent. Try the email change again."
 msgstr ""
 
-msgid "in its place."
+#: includes/users.php:152
+msgid "This confirmation link is invalid or expired."
 msgstr ""

@@ -62,3 +62,15 @@ On a disposable local WordPress site, `tests/admin-fixture.php` creates syntheti
 Site Health shows environment details and local WordPress checks. The complete native Site Health screen also runs network-dependent checks.
 
 Profile and user-management endpoints consume only their explicit fields. Keep record-level WordPress capability checks in any extension that changes another user's data. Site settings use an explicit option schema, and privacy processing delegates to the native WordPress AJAX actions and plugin callbacks.
+
+## Overview and reports (0.5)
+
+`overview` is the landing section for accounts with `read`. Quick links and task lists follow the account's existing capabilities. Financial cards and the `reports` section require the native `view_woocommerce_reports` capability; Dexo operations roles do not receive it automatically. The report worker checks this capability, its nonce, and job ownership on every batch. No report amounts are queried or rendered for other accounts.
+
+Reports use `wc_get_orders()` in batches of 100 for both HPOS and legacy storage; no analytics import or order-table SQL is required. A complete result is cached per account and date range for up to five minutes. The interface never presents a partial scan as the final total. With JavaScript disabled, use **Reload to continue** after a batch completes.
+
+Dates use the WordPress site timezone, with inclusive calendar days and at most 366 days. This is an **order creation cohort**, not a cashflow ledger: refunds recorded through refresh reduce the original order's period. Net sales = order total minus tax and shipping minus refunds on that same basis; fees and discounts already in the order total remain included. Revenue includes paid statuses and refunded orders; counts include all standard statuses. A full amount-only refund cancels all original net sales; a partial unallocated refund reduces net sales, but cannot infer returned product quantities. Product rankings count item quantities after allocated item refunds; full refunds contribute zero units. Foreign-currency orders are excluded and counted in the report details. Average net order includes paid and refunded orders in its denominator.
+
+Each scan freezes its creation-date upper bound when it starts. The live store is not locked: edits, deletes, imports, refunds, or changes to order dates during a multi-request scan may change results. Refresh after store activity settles for reconciliation. This operational report is not an atomic accounting snapshot or profit statement.
+
+Run `tests/reports-checks.php` with WP-CLI on a disposable local site to verify refund arithmetic, currencies, DST boundaries, pagination, retries, and restricted roles against either storage engine. The fixture removes its created orders and restores currency/timezone settings.
