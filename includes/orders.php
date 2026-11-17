@@ -49,34 +49,57 @@ function render_orders( int $id, bool $print ): void {
 		$pages = (int) $results->max_num_pages;
 	}
 	?>
-<form method="get" action="<?php echo esc_url( panel_url() ); ?>" class="filters">
-	<?php hidden_route( 'orders' ); ?>
-	<label><?php esc_html_e( 'Order ID', 'dexo' ); ?><input name="order" type="search" inputmode="numeric" value="<?php echo esc_attr( $lookup ); ?>"></label>
-	<label><?php esc_html_e( 'Status', 'dexo' ); ?><select name="status">
-		<option value=""><?php esc_html_e( 'All statuses', 'dexo' ); ?></option>
-		<?php foreach ( $statuses as $key => $label ) : ?>
-			<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $status, $key ); ?>><?php echo esc_html( $label ); ?></option>
-		<?php endforeach; ?>
-	</select></label>
-	<button><?php esc_html_e( 'Filter orders', 'dexo' ); ?></button>
-</form>
-<?php if ( ! $orders ) : ?>
-	<p class="empty"><?php esc_html_e( 'No orders found.', 'dexo' ); ?></p>
-<?php else : ?>
-	<div class="table-wrap"><table>
-		<thead><tr><th scope="col"><?php esc_html_e( 'Order', 'dexo' ); ?></th><th scope="col"><?php esc_html_e( 'Date', 'dexo' ); ?></th><th scope="col"><?php esc_html_e( 'Status', 'dexo' ); ?></th><?php if ( can( 'dexo_orders_totals' ) ) : ?><th scope="col"><?php esc_html_e( 'Total', 'dexo' ); ?></th><?php endif; ?></tr></thead>
-		<tbody>
-		<?php foreach ( $orders as $order ) : ?>
-			<tr>
-				<th scope="row"><a href="<?php echo esc_url( panel_url( array( 'tab' => 'orders', 'id' => $order->get_id() ) ) ); ?>">#<?php echo esc_html( $order->get_order_number() ); ?></a></th>
-				<td><?php echo esc_html( wc_format_datetime( $order->get_date_created() ) ); ?></td>
-				<td><?php order_status_badge( $order ); ?></td>
-				<?php if ( can( 'dexo_orders_totals' ) ) : ?><td><?php echo money( $order->get_total(), $order->get_currency() ); ?></td><?php endif; ?>
-			</tr>
-		<?php endforeach; ?>
-		</tbody>
-	</table></div>
-<?php endif; ?>
+<section class="surface">
+	<form method="get" action="<?php echo esc_url( panel_url() ); ?>" class="list-toolbar">
+		<?php hidden_route( 'orders' ); ?>
+		<div class="search-field">
+			<?php icon( 'search' ); ?>
+			<input name="order" type="search" inputmode="numeric" aria-label="<?php esc_attr_e( 'Order ID', 'dexo' ); ?>" placeholder="<?php esc_attr_e( 'Search orders by ID…', 'dexo' ); ?>" value="<?php echo esc_attr( $lookup ); ?>">
+		</div>
+		<div class="toolbar-actions">
+			<select name="status" aria-label="<?php esc_attr_e( 'Status', 'dexo' ); ?>">
+				<option value=""><?php esc_html_e( 'All statuses', 'dexo' ); ?></option>
+				<?php foreach ( $statuses as $key => $label ) : ?>
+					<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $status, $key ); ?>><?php echo esc_html( $label ); ?></option>
+				<?php endforeach; ?>
+			</select>
+			<button class="secondary"><?php esc_html_e( 'Filter orders', 'dexo' ); ?></button>
+		</div>
+	</form>
+	<?php if ( ! $orders ) : ?>
+		<p class="empty"><?php esc_html_e( 'No orders found.', 'dexo' ); ?></p>
+	<?php else : ?>
+		<div class="table-wrap"><table class="data-table mobile-records">
+			<thead><tr>
+				<th scope="col"><?php esc_html_e( 'Order ID', 'dexo' ); ?></th>
+				<?php if ( can( 'dexo_orders_contact' ) ) : ?><th scope="col"><?php esc_html_e( 'Customer', 'dexo' ); ?></th><?php endif; ?>
+				<th scope="col"><?php esc_html_e( 'Status', 'dexo' ); ?></th>
+				<th scope="col"><?php esc_html_e( 'Order items', 'dexo' ); ?></th>
+				<th scope="col"><?php esc_html_e( 'Date', 'dexo' ); ?></th>
+				<?php if ( can( 'dexo_orders_totals' ) ) : ?><th scope="col"><?php esc_html_e( 'Total', 'dexo' ); ?></th><?php endif; ?>
+				<th scope="col"><span class="sr-only"><?php esc_html_e( 'Details', 'dexo' ); ?></span></th>
+			</tr></thead>
+			<tbody>
+			<?php foreach ( $orders as $order ) : ?>
+				<?php $url = panel_url( array( 'tab' => 'orders', 'id' => $order->get_id() ) ); ?>
+				<tr>
+					<th scope="row" class="record-id"><a href="<?php echo esc_url( $url ); ?>">#<?php echo esc_html( $order->get_order_number() ); ?></a></th>
+					<?php if ( can( 'dexo_orders_contact' ) ) : ?>
+						<td data-label="<?php esc_attr_e( 'Customer', 'dexo' ); ?>"><a class="record-title" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $order->get_formatted_billing_full_name() ?: '—' ); ?></a></td>
+					<?php endif; ?>
+					<td data-label="<?php esc_attr_e( 'Status', 'dexo' ); ?>"><?php order_status_badge( $order ); ?></td>
+					<td data-label="<?php esc_attr_e( 'Order items', 'dexo' ); ?>">
+						<?php foreach ( $order->get_items() as $item ) : ?><div class="order-line"><?php echo esc_html( $item->get_name() ); ?> × <?php echo esc_html( number_format_i18n( $item->get_quantity() ) ); ?></div><?php endforeach; ?>
+					</td>
+					<td data-label="<?php esc_attr_e( 'Date', 'dexo' ); ?>"><?php echo esc_html( wc_format_datetime( $order->get_date_created() ) ); ?></td>
+					<?php if ( can( 'dexo_orders_totals' ) ) : ?><td class="money" data-label="<?php esc_attr_e( 'Total', 'dexo' ); ?>"><?php echo money( $order->get_total(), $order->get_currency() ); ?></td><?php endif; ?>
+					<td><a class="record-link" href="<?php echo esc_url( $url ); ?>"><?php esc_html_e( 'Details', 'dexo' ); ?><span class="direction-icon"><?php icon( 'chevron', 14 ); ?></span></a></td>
+				</tr>
+			<?php endforeach; ?>
+			</tbody>
+		</table></div>
+	<?php endif; ?>
+</section>
 	<?php
 	pagination( array( 'tab' => 'orders', 'order' => $lookup, 'status' => $status ), $page, $pages );
 }

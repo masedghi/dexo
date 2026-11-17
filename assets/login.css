@@ -1,13 +1,97 @@
-html { background: #111319; }
-body.login {
-	background: #111319;
-	color: #f1f3f8;
-	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+@import url("theme.css");
+
+html { background: #fdfefa; }
+body.dexo-login {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0;
+  background: #fdfefa;
+  color: var(--ink);
+  font: 13px/1.8 Vazirmatn, Tahoma, sans-serif;
 }
-body.login #login { width: min(370px, calc(100% - 2rem)); box-sizing: border-box; }
-body.login #login h1 a { width: auto; height: auto; background: none !important; text-indent: 0; color: #c7f58a; font: 750 2rem/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .17em; text-decoration: none; direction: ltr; }
-body.login form { background: #191c25; border: 1px solid #313645; border-radius: 12px; color: #f1f3f8; }
-body.login input[type="text"], body.login input[type="password"], body.login input[type="email"] { background: #111319; border-color: #626c83; color: #f1f3f8; }
-body.login .button-primary { background: #c7f58a; border-color: #c7f58a; color: #1a2614; font-weight: 700; }
-body.login .button-secondary, body.login #nav a, body.login #backtoblog a, body.login .privacy-policy-link { color: #c7f58a; }
-body.login :focus-visible { outline: 2px solid #d4ff97; outline-offset: 3px; }
+.dexo-login .login-story {
+  align-self: stretch;
+  min-height: 100vh;
+  background: var(--sage);
+  padding: 55px clamp(28px, 5.4vw, 70px);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-content: center;
+}
+.dexo-login .login-story > a { position: absolute; inset-block-start: 55px; inset-inline-start: clamp(28px, 5.4vw, 70px); z-index: 1; text-decoration: none; }
+.dexo-login .login-story .wordmark { font-size: 38px; }
+.dexo-login .story-title { position: relative; z-index: 1; }
+.dexo-login .story-title b { display: block; font-size: 13px; color: #627054; }
+.dexo-login .story-title p { margin: 14px 0 18px; font-size: clamp(33px, 4.2vw, 55px); line-height: 1.6; letter-spacing: -.045em; font-weight: 900; }
+.dexo-login .story-title small { display: block; max-width: 330px; color: #536843; font-size: 14px; line-height: 2.2; }
+.dexo-login .login-orbit {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  inset-inline-end: -190px;
+  inset-block-end: 5%;
+  border: 1px solid #d2ddc5;
+  border-radius: 50%;
+  box-shadow: 0 0 0 45px #e2ead933, 0 0 0 90px #dce6ce33;
+  pointer-events: none;
+}
+body.dexo-login #login { box-sizing: border-box; width: min(370px, calc(100% - 52px)); min-width: 0; padding: 35px 0; margin: auto; }
+body.dexo-login #login h1.wp-login-logo { display: none; }
+body.dexo-login #login h1 a { width: auto; height: auto; background: none !important; text-indent: 0; color: var(--ink); text-align: start; font-weight: 850; }
+.dexo-login .login-intro h2 { margin: 18px 0 6px; font: 800 25px/1.6 Vazirmatn, Tahoma, sans-serif; color: var(--ink); }
+.dexo-login .login-intro p { margin: 0 0 16px; padding: 0; color: #627054; }
+.dexo-login .login-icon {
+  width: 57px;
+  height: 57px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #dfe6d5;
+  border-radius: 15px;
+  background: #f3f6ed;
+  color: #688151;
+}
+body.dexo-login form {
+  padding: 0;
+  margin-top: 18px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: var(--ink);
+  overflow: visible;
+}
+body.dexo-login form label { color: #526746; font-size: 12px; }
+body.dexo-login input:is([type="text"], [type="password"], [type="email"]) {
+  min-height: 40px;
+  border: 1px solid var(--input);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  direction: ltr;
+}
+body.dexo-login .button-primary {
+  float: none;
+  width: 100%;
+  margin-top: 16px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: #fff;
+  min-height: 40px;
+}
+body.dexo-login .button-primary:hover { background: #293e28; }
+body.dexo-login .button-secondary, body.dexo-login #nav a, body.dexo-login #backtoblog a, body.dexo-login .privacy-policy-link { color: #4d6145; }
+body.dexo-login #nav, body.dexo-login #backtoblog { text-align: center; margin: 15px 0 0; padding: 0; }
+body.dexo-login .language-switcher { grid-column: 2; margin: 0; }
+body.dexo-login .language-switcher form { margin: 0; }
+body.dexo-login :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+@media (max-width: 760px) {
+  body.dexo-login { display: flex; flex-direction: column; justify-content: center; }
+  .dexo-login .login-story { display: none; }
+  body.dexo-login #login h1.wp-login-logo { display: block; }
+  body.dexo-login #login h1 a { margin: 0 0 22px; width: max-content; }
+  body.dexo-login .language-switcher { margin: 0 0 15px; }
+}

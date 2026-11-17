@@ -3,7 +3,7 @@
  * Plugin Name: Dexo
  * Plugin URI: https://github.com/masedghi/dexo
  * Description: A standalone operations dashboard for WooCommerce orders, product inventory, and store teams.
- * Version: 0.1.0
+ * Version: 0.2.0
  * Requires at least: 6.8
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
@@ -19,7 +19,7 @@ namespace Dexo;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION = '0.1.0';
+const VERSION = '0.2.0';
 const FILE = __FILE__;
 
 require_once __DIR__ . '/includes/access.php';
@@ -48,6 +48,42 @@ add_action( 'login_enqueue_scripts', static function (): void {
 	if ( is_dexo_login() ) {
 		wp_enqueue_style( 'dexo-login', plugins_url( 'assets/login.css', FILE ), array(), VERSION );
 	}
+} );
+add_filter( 'login_body_class', static function ( array $classes ): array {
+	if ( is_dexo_login() ) {
+		$classes[] = 'dexo-login';
+	}
+	return $classes;
+} );
+add_action( 'login_header', static function (): void {
+	if ( ! is_dexo_login() ) {
+		return;
+	}
+	?>
+	<aside class="login-story">
+		<a href="<?php echo esc_url( panel_url() ); ?>"><?php brand_wordmark(); ?></a>
+		<div class="story-title">
+			<b><?php esc_html_e( 'Dexo workspace', 'dexo' ); ?></b>
+			<p><?php esc_html_e( 'Everything,', 'dexo' ); ?><br><?php esc_html_e( 'in its place.', 'dexo' ); ?></p>
+			<small><?php esc_html_e( 'Manage your store from the first order to the final delivery.', 'dexo' ); ?></small>
+		</div>
+		<div class="login-orbit" aria-hidden="true"></div>
+	</aside>
+	<?php
+} );
+add_filter( 'login_message', static function ( string $message ): string {
+	if ( ! is_dexo_login() || ! in_array( $GLOBALS['action'] ?? 'login', array( 'login', '' ), true ) ) {
+		return $message;
+	}
+	ob_start();
+	?>
+	<div class="login-intro">
+		<span class="login-icon"><?php icon( 'lock', 26 ); ?></span>
+		<h2><?php esc_html_e( 'Welcome to Dexo', 'dexo' ); ?></h2>
+		<p><?php esc_html_e( 'Sign in with your work account.', 'dexo' ); ?></p>
+	</div>
+	<?php
+	return ob_get_clean() . $message;
 } );
 add_filter( 'login_headerurl', static fn( $url ) => is_dexo_login() ? panel_url() : $url );
 add_filter( 'login_headertext', static fn( $text ) => is_dexo_login() ? 'DEXO' : $text );

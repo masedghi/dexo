@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.1.0\n"
+"Project-Id-Version: Dexo 0.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,6 +44,15 @@ msgstr ""
 msgid "Changes saved."
 msgstr ""
 
+msgid "Close details"
+msgstr ""
+
+msgid "Close menu"
+msgstr ""
+
+msgid "Connected to your store"
+msgstr ""
+
 msgid "Customer"
 msgstr ""
 
@@ -51,6 +60,12 @@ msgid "Dashboard"
 msgstr ""
 
 msgid "Date"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Dexo workspace"
 msgstr ""
 
 msgid "Dexo · Catalog"
@@ -74,6 +89,9 @@ msgstr ""
 msgid "Enter a whole stock quantity."
 msgstr ""
 
+msgid "Everything,"
+msgstr ""
+
 msgid "Filter orders"
 msgstr ""
 
@@ -87,6 +105,9 @@ msgid "Inventory"
 msgstr ""
 
 msgid "Item"
+msgstr ""
+
+msgid "Manage your store from the first order to the final delivery."
 msgstr ""
 
 msgid "New status"
@@ -104,10 +125,10 @@ msgstr ""
 msgid "Open Dexo"
 msgstr ""
 
-msgid "Open parent product"
+msgid "Open menu"
 msgstr ""
 
-msgid "Order"
+msgid "Open parent product"
 msgstr ""
 
 msgid "Order ID"
@@ -188,10 +209,16 @@ msgstr ""
 msgid "Save tracking code"
 msgstr ""
 
+msgid "Search orders by ID…"
+msgstr ""
+
 msgid "Shipment"
 msgstr ""
 
 msgid "Shipment tracking updated in Dexo."
+msgstr ""
+
+msgid "Sign in with your work account."
 msgstr ""
 
 msgid "Sign in · Dexo"
@@ -213,6 +240,21 @@ msgid "Stock quantity"
 msgstr ""
 
 msgid "Stock status"
+msgstr ""
+
+msgid "Store"
+msgstr ""
+
+msgid "Store management"
+msgstr ""
+
+msgid "Store manager"
+msgstr ""
+
+msgid "Team member"
+msgstr ""
+
+msgid "Team workspace"
 msgstr ""
 
 msgid "The note could not be saved."
@@ -263,6 +305,12 @@ msgstr ""
 msgid "Variations"
 msgstr ""
 
+msgid "View store"
+msgstr ""
+
+msgid "Welcome to Dexo"
+msgstr ""
+
 msgid "WooCommerce could not save the change. Reload the order and check its current state."
 msgstr ""
 
@@ -276,4 +324,7 @@ msgid "You cannot make this change."
 msgstr ""
 
 msgid "Your form expired. Reload the page and try again."
+msgstr ""
+
+msgid "in its place."
 msgstr ""

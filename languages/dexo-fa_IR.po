@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.1.0\n"
+"Project-Id-Version: Dexo 0.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,6 +46,15 @@ msgstr "بازگشت به سفارش"
 msgid "Changes saved."
 msgstr "تغییرات ذخیره شد."
 
+msgid "Close details"
+msgstr "بستن جزئیات"
+
+msgid "Close menu"
+msgstr "بستن فهرست"
+
+msgid "Connected to your store"
+msgstr "متصل به فروشگاه"
+
 msgid "Customer"
 msgstr "مشتری"
 
@@ -54,6 +63,12 @@ msgstr "پنل"
 
 msgid "Date"
 msgstr "تاریخ"
+
+msgid "Details"
+msgstr "جزئیات"
+
+msgid "Dexo workspace"
+msgstr "فضای کار دیکسو"
 
 msgid "Dexo · Catalog"
 msgstr "دیکسو · کاتالوگ"
@@ -76,6 +91,9 @@ msgstr "کد رهگیری را در حداکثر ۱۲۰ نویسه وارد کن
 msgid "Enter a whole stock quantity."
 msgstr "موجودی را به‌صورت عدد صحیح وارد کنید."
 
+msgid "Everything,"
+msgstr "همه‌چیز،"
+
 msgid "Filter orders"
 msgstr "فیلتر سفارش‌ها"
 
@@ -90,6 +108,9 @@ msgstr "موجودی"
 
 msgid "Item"
 msgstr "قلم"
+
+msgid "Manage your store from the first order to the final delivery."
+msgstr "از اولین سفارش تا رسیدن کالا به دست مشتری، فروشگاه را از اینجا مدیریت کنید."
 
 msgid "New status"
 msgstr "وضعیت جدید"
@@ -106,11 +127,11 @@ msgstr "محصولی پیدا نشد."
 msgid "Open Dexo"
 msgstr "باز کردن دیکسو"
 
+msgid "Open menu"
+msgstr "باز کردن فهرست"
+
 msgid "Open parent product"
 msgstr "باز کردن محصول مادر"
-
-msgid "Order"
-msgstr "سفارش"
 
 msgid "Order ID"
 msgstr "شناسهٔ سفارش"
@@ -190,11 +211,17 @@ msgstr "ذخیرهٔ وضعیت"
 msgid "Save tracking code"
 msgstr "ذخیرهٔ کد رهگیری"
 
+msgid "Search orders by ID…"
+msgstr "جست‌وجوی سفارش با شناسه…"
+
 msgid "Shipment"
 msgstr "ارسال"
 
 msgid "Shipment tracking updated in Dexo."
 msgstr "رهگیری ارسال در دیکسو به‌روز شد."
+
+msgid "Sign in with your work account."
+msgstr "با حساب کاری خود وارد شوید."
 
 msgid "Sign in · Dexo"
 msgstr "ورود · دیکسو"
@@ -216,6 +243,21 @@ msgstr "تعداد موجودی"
 
 msgid "Stock status"
 msgstr "وضعیت موجودی"
+
+msgid "Store"
+msgstr "فروشگاه"
+
+msgid "Store management"
+msgstr "مدیریت فروشگاه"
+
+msgid "Store manager"
+msgstr "مدیر فروشگاه"
+
+msgid "Team member"
+msgstr "عضو تیم"
+
+msgid "Team workspace"
+msgstr "فضای کار تیم"
 
 msgid "The note could not be saved."
 msgstr "ذخیرهٔ یادداشت انجام نشد."
@@ -265,6 +307,12 @@ msgstr "در دیکسو به‌روز شد."
 msgid "Variations"
 msgstr "مدل‌ها"
 
+msgid "View store"
+msgstr "مشاهده فروشگاه"
+
+msgid "Welcome to Dexo"
+msgstr "به دیکسو خوش آمدید"
+
 msgid "WooCommerce could not save the change. Reload the order and check its current state."
 msgstr "ووکامرس نتوانست تغییر را ذخیره کند. سفارش را تازه کنید و وضعیت فعلی را بررسی کنید."
 
@@ -279,3 +327,6 @@ msgstr "اجازهٔ این تغییر را ندارید."
 
 msgid "Your form expired. Reload the page and try again."
 msgstr "اعتبار فرم تمام شده است. صفحه را تازه کنید و دوباره تلاش کنید."
+
+msgid "in its place."
+msgstr "در جای خودش."

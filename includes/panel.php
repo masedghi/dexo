@@ -126,20 +126,47 @@ function render_panel(): void {
 		}, $sections, $tab );
 		exit;
 	}
-	render_layout( $is_print ? __( 'Packing slip', 'dexo' ) : $section['label'], static function () use ( $section, $id, $error, $is_print ): void {
+	$content = static function () use ( $section, $id, $error, $is_print ): void {
 		if ( $error ) {
 			echo '<p class="notice error" role="alert">' . esc_html( $error->get_error_message() ) . '</p>';
 		} elseif ( '1' === request_text( $_GET, 'saved' ) ) {
 			echo '<p class="notice" role="status">' . esc_html__( 'Changes saved.', 'dexo' ) . '</p>';
 		}
 		$section['render']( $id, $is_print );
-	}, $sections, $tab, $is_print );
+	};
+	$body = $id && ! $is_print && in_array( $tab, array( 'orders', 'products' ), true )
+		? static fn() => render_editor( $tab, $id, $section, $content )
+		: $content;
+	render_layout( $is_print ? __( 'Packing slip', 'dexo' ) : $section['label'], $body, $sections, $tab, $is_print );
 	exit;
+}
+
+function icon( string $name, int $size = 18 ): void {
+	$paths = array(
+		'orders' => '<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16m-11 4a3 3 0 0 0 6 0"/>',
+		'products' => '<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm8 4.5L12 12l-8-4.5m8 4.5v9M8 5.25l8 4.5"/>',
+		'search' => '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>',
+		'menu' => '<path d="M4 6h16M4 12h16M4 18h16"/>',
+		'close' => '<path d="m6 6 12 12M18 6 6 18"/>',
+		'chevron' => '<path d="m9 6 6 6-6 6"/>',
+		'external' => '<path d="M7 17 17 7M7 7h10v10"/>',
+		'logout' => '<path d="M10 17l5-5-5-5m5 5H3m9-8h7a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7"/>',
+		'lock' => '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4m-4 4v2"/>',
+	);
+	if ( isset( $paths[ $name ] ) ) {
+		printf( '<svg width="%d" height="%d" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">%s</svg>', $size, $size, $paths[ $name ] );
+	}
+}
+
+function brand_wordmark(): void {
+	echo '<span class="wordmark" dir="ltr">DEXO</span>';
 }
 
 function render_layout( string $title, callable $content, array $sections = array(), string $active = '', bool $print = false ): void {
 	$locale = str_replace( '_', '-', get_locale() );
 	$rtl = is_rtl() || preg_match( '/^(fa|ar|he|ur)(-|$)/i', $locale );
+	$name = wp_get_current_user()->display_name;
+	$initial = strtoupper( mb_substr( $name, 0, 1 ) );
 	?>
 <!doctype html>
 <html lang="<?php echo esc_attr( $locale ); ?>" dir="<?php echo $rtl ? 'rtl' : 'ltr'; ?>">
@@ -148,6 +175,7 @@ function render_layout( string $title, callable $content, array $sections = arra
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo esc_html( $title ); ?> · DEXO</title>
 	<link rel="stylesheet" href="<?php echo esc_url( add_query_arg( 'ver', VERSION, plugins_url( 'assets/panel.css', FILE ) ) ); ?>">
+	<script defer src="<?php echo esc_url( add_query_arg( 'ver', VERSION, plugins_url( 'assets/panel.js', FILE ) ) ); ?>"></script>
 	<?php if ( $print ) : ?>
 		<script defer src="<?php echo esc_url( add_query_arg( 'ver', VERSION, plugins_url( 'assets/print.js', FILE ) ) ); ?>"></script>
 	<?php endif; ?>
@@ -155,27 +183,75 @@ function render_layout( string $title, callable $content, array $sections = arra
 </head>
 <body<?php echo $print ? ' class="print-view"' : ''; ?>>
 <a class="skip-link" href="#main"><?php esc_html_e( 'Skip to content', 'dexo' ); ?></a>
-<div class="shell">
-	<aside class="sidebar">
-		<a class="brand" href="<?php echo esc_url( panel_url() ); ?>" aria-label="Dexo"><span class="mark" aria-hidden="true">D</span><span>DEXO</span></a>
-		<div class="store"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></div>
-		<nav aria-label="<?php esc_attr_e( 'Dashboard', 'dexo' ); ?>">
-		<?php foreach ( $sections as $slug => $section ) : ?>
-			<a href="<?php echo esc_url( panel_url( array( 'tab' => $slug ) ) ); ?>"<?php echo $active === $slug ? ' aria-current="page"' : ''; ?>><?php echo esc_html( $section['label'] ); ?></a>
-		<?php endforeach; ?>
-		</nav>
-		<div class="identity">
-			<strong><?php echo esc_html( wp_get_current_user()->display_name ); ?></strong>
-			<a href="<?php echo esc_url( wp_logout_url( panel_url() ) ); ?>"><?php esc_html_e( 'Sign out', 'dexo' ); ?></a>
+<div class="app-shell">
+	<button type="button" class="sidebar-backdrop" aria-label="<?php esc_attr_e( 'Close menu', 'dexo' ); ?>" hidden></button>
+	<aside class="sidebar" id="dexo-sidebar">
+		<a class="brand" href="<?php echo esc_url( panel_url() ); ?>">
+			<?php brand_wordmark(); ?>
+			<span class="brand-label"><?php esc_html_e( 'Store management', 'dexo' ); ?></span>
+		</a>
+		<div class="workspace">
+			<span class="workspace-mark" aria-hidden="true">D</span>
+			<div><b><?php echo esc_html( get_bloginfo( 'name' ) ); ?></b><small><?php esc_html_e( 'Team workspace', 'dexo' ); ?></small></div>
+			<span class="live-dot" aria-hidden="true"></span>
 		</div>
+		<nav aria-label="<?php esc_attr_e( 'Dashboard', 'dexo' ); ?>">
+			<?php if ( $sections ) : ?><p class="nav-label"><?php esc_html_e( 'Store', 'dexo' ); ?></p><?php endif; ?>
+			<?php foreach ( $sections as $slug => $section ) : ?>
+				<a href="<?php echo esc_url( panel_url( array( 'tab' => $slug ) ) ); ?>"<?php echo $active === $slug ? ' aria-current="page"' : ''; ?>>
+					<?php icon( $slug, 19 ); ?>
+					<span><?php echo esc_html( $section['label'] ); ?></span>
+					<?php if ( $active === $slug ) : ?><span class="nav-indicator" aria-hidden="true"></span><?php endif; ?>
+				</a>
+			<?php endforeach; ?>
+		</nav>
+		<?php if ( '' !== $name ) : ?>
+			<div class="sidebar-foot">
+				<span class="avatar" aria-hidden="true"><?php echo esc_html( $initial ); ?></span>
+				<div><b><?php echo esc_html( $name ); ?></b><small><?php echo esc_html( is_manager() ? __( 'Store manager', 'dexo' ) : __( 'Team member', 'dexo' ) ); ?></small></div>
+				<a class="icon-button sign-out" aria-label="<?php esc_attr_e( 'Sign out', 'dexo' ); ?>" href="<?php echo esc_url( wp_logout_url( panel_url() ) ); ?>"><?php icon( 'logout', 17 ); ?></a>
+			</div>
+		<?php endif; ?>
 	</aside>
-	<main class="main" id="main">
-		<header class="page-header"><h1><?php echo esc_html( $title ); ?></h1></header>
-		<?php $content(); ?>
-	</main>
+	<div class="main-shell">
+		<header class="topbar">
+			<div class="breadcrumb">
+				<button type="button" class="icon-button mobile-menu" aria-controls="dexo-sidebar" aria-expanded="false" aria-label="<?php esc_attr_e( 'Open menu', 'dexo' ); ?>"><?php icon( 'menu' ); ?></button>
+				<span><?php esc_html_e( 'Dexo workspace', 'dexo' ); ?></span>
+				<span class="direction-icon"><?php icon( 'chevron', 14 ); ?></span>
+				<b><?php echo esc_html( $title ); ?></b>
+			</div>
+			<div class="top-actions">
+				<span class="today"><?php echo esc_html( wp_date( 'l, j F' ) ); ?></span>
+				<a class="store-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'View store', 'dexo' ); ?><?php icon( 'external', 16 ); ?></a>
+			</div>
+		</header>
+		<main class="main" id="main">
+			<header class="page-heading">
+				<div><span class="eyebrow">DEXO WORKSPACE</span><h1><?php echo esc_html( $title ); ?></h1></div>
+				<?php if ( $sections ) : ?><p class="heading-note"><span class="live-dot" aria-hidden="true"></span><?php esc_html_e( 'Connected to your store', 'dexo' ); ?></p><?php endif; ?>
+			</header>
+			<?php $content(); ?>
+		</main>
+	</div>
 </div>
 </body>
 </html>
+	<?php
+}
+
+function render_editor( string $tab, int $id, array $section, callable $content ): void {
+	$section['render']( 0, false );
+	$close = panel_url( array( 'tab' => $tab ) );
+	$label = 'orders' === $tab ? __( 'Order', 'dexo' ) : __( 'Product', 'dexo' );
+	?>
+	<dialog class="panel-dialog" id="dexo-editor" aria-labelledby="dexo-editor-title" data-return="<?php echo esc_url( $close ); ?>" open>
+		<header>
+			<h2 id="dexo-editor-title" tabindex="-1" autofocus><?php echo esc_html( $label ); ?> <bdi>#<?php echo esc_html( number_format_i18n( $id ) ); ?></bdi></h2>
+			<a class="icon-button" href="<?php echo esc_url( $close ); ?>" aria-label="<?php esc_attr_e( 'Close details', 'dexo' ); ?>"><?php icon( 'close' ); ?></a>
+		</header>
+		<div class="editor-body"><?php $content(); ?></div>
+	</dialog>
 	<?php
 }
 

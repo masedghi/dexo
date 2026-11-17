@@ -11,6 +11,7 @@ files = [
     plugin,
     root / "LICENSE",
     root / "README.md",
+    root / "DESIGN.md",
     root / "CHANGELOG.md",
     root / "SECURITY.md",
     *sorted((root / "assets").glob("*")),

@@ -45,34 +45,46 @@ function render_products( int $id, bool $print ): void {
 		array_unshift( $ids, $sku_id );
 	}
 	?>
-<form method="get" action="<?php echo esc_url( panel_url() ); ?>" class="filters">
-	<?php hidden_route( 'products' ); ?>
-	<label><?php esc_html_e( 'Product name or exact SKU', 'dexo' ); ?><input name="q" type="search" value="<?php echo esc_attr( $query ); ?>"></label>
-	<button><?php esc_html_e( 'Find products', 'dexo' ); ?></button>
-</form>
-<?php if ( ! $ids ) : ?>
-	<p class="empty"><?php esc_html_e( 'No products found.', 'dexo' ); ?></p>
-<?php else : ?>
-	<div class="table-wrap"><table>
-		<thead><tr>
-			<th scope="col"><?php esc_html_e( 'Product', 'dexo' ); ?></th>
-			<th scope="col"><?php esc_html_e( 'SKU', 'dexo' ); ?></th>
-			<th scope="col"><?php esc_html_e( 'Stock', 'dexo' ); ?></th>
-			<?php if ( can( 'dexo_products_prices' ) ) : ?><th scope="col"><?php esc_html_e( 'Price', 'dexo' ); ?></th><?php endif; ?>
-		</tr></thead>
-		<tbody>
+<section class="surface">
+	<form method="get" action="<?php echo esc_url( panel_url() ); ?>" class="list-toolbar">
+		<?php hidden_route( 'products' ); ?>
+		<div class="search-field">
+			<?php icon( 'search' ); ?>
+			<input name="q" type="search" aria-label="<?php esc_attr_e( 'Product name or exact SKU', 'dexo' ); ?>" placeholder="<?php esc_attr_e( 'Product name or exact SKU', 'dexo' ); ?>" value="<?php echo esc_attr( $query ); ?>">
+		</div>
+		<button class="secondary"><?php esc_html_e( 'Find products', 'dexo' ); ?></button>
+	</form>
+	<?php if ( ! $ids ) : ?>
+		<p class="empty"><?php esc_html_e( 'No products found.', 'dexo' ); ?></p>
+	<?php else : ?>
+		<div class="table-wrap"><table class="data-table mobile-records">
+			<thead><tr>
+				<th scope="col"><?php esc_html_e( 'Product', 'dexo' ); ?></th>
+				<th scope="col"><?php esc_html_e( 'Stock', 'dexo' ); ?></th>
+				<?php if ( can( 'dexo_products_prices' ) ) : ?><th scope="col"><?php esc_html_e( 'Price', 'dexo' ); ?></th><?php endif; ?>
+				<th scope="col"><span class="sr-only"><?php esc_html_e( 'Details', 'dexo' ); ?></span></th>
+			</tr></thead>
+			<tbody>
 			<?php foreach ( $ids as $product_id ) : ?>
-				<?php $product = get_product( $product_id ); if ( ! $product ) { continue; } ?>
+				<?php
+				$product = get_product( $product_id );
+				if ( ! $product ) { continue; }
+				$url = panel_url( array( 'tab' => 'products', 'id' => $product_id ) );
+				?>
 				<tr>
-					<th scope="row"><a href="<?php echo esc_url( panel_url( array( 'tab' => 'products', 'id' => $product_id ) ) ); ?>"><?php echo esc_html( $product->get_name() ); ?></a></th>
-					<td><bdi><?php echo esc_html( $product->get_sku() ?: '—' ); ?></bdi></td>
-					<td><?php echo esc_html( stock_label( $product ) ); ?></td>
-					<?php if ( can( 'dexo_products_prices' ) ) : ?><td><?php echo '' !== $product->get_price() ? money( $product->get_price() ) : '—'; ?></td><?php endif; ?>
+					<th scope="row"><a class="record-title" href="<?php echo esc_url( $url ); ?>">
+						<?php if ( $product->get_image_id() ) { echo wp_get_attachment_image( $product->get_image_id(), 'thumbnail', false, array( 'alt' => '' ) ); } ?>
+						<span><?php echo esc_html( $product->get_name() ); ?><?php if ( $product->get_sku() ) : ?><small><bdi><?php echo esc_html( $product->get_sku() ); ?></bdi></small><?php endif; ?></span>
+					</a></th>
+					<td data-label="<?php esc_attr_e( 'Stock', 'dexo' ); ?>"><span class="badge <?php echo esc_attr( 'status-' . $product->get_stock_status() ); ?>"><?php echo esc_html( stock_label( $product ) ); ?></span></td>
+					<?php if ( can( 'dexo_products_prices' ) ) : ?><td class="money" data-label="<?php esc_attr_e( 'Price', 'dexo' ); ?>"><?php echo '' !== $product->get_price() ? money( $product->get_price() ) : '—'; ?></td><?php endif; ?>
+					<td><a class="record-link" href="<?php echo esc_url( $url ); ?>"><?php esc_html_e( 'Details', 'dexo' ); ?><span class="direction-icon"><?php icon( 'chevron', 14 ); ?></span></a></td>
 				</tr>
 			<?php endforeach; ?>
-		</tbody>
-	</table></div>
-<?php endif; ?>
+			</tbody>
+		</table></div>
+	<?php endif; ?>
+</section>
 	<?php
 	pagination( array( 'tab' => 'products', 'q' => $query ), $page, (int) $results->max_num_pages );
 }
@@ -107,7 +119,7 @@ function render_product( \WC_Product $product ): void {
 			<?php edit_form_nonce( 'products', $id ); ?>
 			<input type="hidden" name="change" value="price">
 			<input type="hidden" name="previous" value="<?php echo esc_attr( $product->get_regular_price( 'edit' ) ); ?>">
-			<label><?php esc_html_e( 'Regular price', 'dexo' ); ?> <bdi>(<?php echo esc_html( get_woocommerce_currency() ); ?>)</bdi>
+			<label><span><?php esc_html_e( 'Regular price', 'dexo' ); ?> <bdi>(<?php echo esc_html( get_woocommerce_currency() ); ?>)</bdi></span>
 				<input name="price" inputmode="decimal" maxlength="22" value="<?php echo esc_attr( wc_format_localized_price( $product->get_regular_price( 'edit' ) ) ); ?>">
 			</label>
 			<button><?php esc_html_e( 'Save price', 'dexo' ); ?></button>
