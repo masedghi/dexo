@@ -1,6 +1,6 @@
 # Dexo design
 
-Dexo brings the visual system of the original store operations panel to a standalone WooCommerce plugin. The public interface uses the DEXO wordmark and the current store’s name. It covers orders, products, packing slips and sign-in.
+Dexo brings the visual system of the original store operations panel to a standalone WooCommerce plugin. The public interface uses the DEXO wordmark and the current store’s name. It covers orders, products, posts, pages, media, packing slips and sign-in. Content navigation follows native WordPress capabilities and uses the same list and record-dialog pattern.
 
 ## Visual tokens
 

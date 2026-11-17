@@ -293,3 +293,8 @@ address { font-style: normal; }
   .print-view .heading-note, .print-view .eyebrow { display: none; }
   .print-view { background: #fff; }
 }
+
+.editor-body > .edit { gap: 14px; }
+.editor-body > .notice { margin-top: 12px; }
+.status-publish { background: #eaf2e5; color: #446339; }
+.status-draft, .status-future { background: #f0f2ec; color: #546044; }

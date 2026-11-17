@@ -50,7 +50,7 @@ function sections(): array {
 			'render' => __NAMESPACE__ . '\\render_products', 'submit' => __NAMESPACE__ . '\\submit_product',
 		),
 	);
-	$registered = apply_filters( 'dexo_sections', $sections );
+	$registered = apply_filters( 'dexo_sections', $sections + content_sections() );
 	return array_filter( $registered, static function ( $section ): bool {
 		return is_array( $section ) && ! empty( $section['label'] ) &&
 			! empty( $section['capability'] ) && is_string( $section['capability'] ) &&
@@ -73,7 +73,7 @@ function render_panel(): void {
 		wp_safe_redirect( wp_login_url( panel_url() ) );
 		exit;
 	}
-	if ( ! can( 'dexo_access' ) ) {
+	if ( ! can( 'dexo_access' ) && ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) && ! current_user_can( 'upload_files' ) ) {
 		status_header( 403 );
 		render_layout( __( 'Access restricted', 'dexo' ), static function (): void {
 			echo '<p>' . esc_html__( 'Ask your store administrator to assign a Dexo role to your account.', 'dexo' ) . '</p>';
@@ -100,20 +100,22 @@ function render_panel(): void {
 
 	$section = $sections[ $tab ];
 	$id = request_id( $_GET );
+	$creating = ! $id && isset( $section['create'] ) && '1' === request_text( $_GET, 'new' );
 	$error = null;
 	status_header( 200 );
 	if ( 'POST' === ( $_SERVER['REQUEST_METHOD'] ?? '' ) ) {
 		$nonce = request_text( $_POST, '_dexo_nonce' );
 		if ( ! wp_verify_nonce( $nonce, "dexo_{$tab}_{$id}" ) ) {
 			$error = new \WP_Error( 'nonce', __( 'Your form expired. Reload the page and try again.', 'dexo' ), 403 );
-		} elseif ( ! is_callable( $section['submit'] ?? null ) ) {
+		} elseif ( ! is_callable( $section['submit'] ?? null ) || ( ! $id && isset( $section['create'] ) && ! $creating ) ) {
 			$error = new \WP_Error( 'action', __( 'This page does not accept changes.', 'dexo' ), 405 );
 		} else {
-			$error = submit_section( $section['submit'], $tab, $id );
-			if ( ! is_wp_error( $error ) ) {
-				wp_safe_redirect( panel_url( array( 'tab' => $tab, 'id' => $id, 'saved' => '1' ) ), 303 );
+			$result = submit_section( $section['submit'], $tab, $id );
+			if ( ! is_wp_error( $result ) ) {
+				wp_safe_redirect( panel_url( array( 'tab' => $tab, 'id' => is_int( $result ) ? $result : $id, 'saved' => '1' ) ), 303 );
 				exit;
 			}
+			$error = $result;
 		}
 		status_header( (int) ( $error->get_error_data() ?: 400 ) );
 	}
@@ -126,15 +128,19 @@ function render_panel(): void {
 		}, $sections, $tab );
 		exit;
 	}
-	$content = static function () use ( $section, $id, $error, $is_print ): void {
+	$content = static function () use ( $section, $id, $error, $is_print, $creating ): void {
 		if ( $error ) {
 			echo '<p class="notice error" role="alert">' . esc_html( $error->get_error_message() ) . '</p>';
 		} elseif ( '1' === request_text( $_GET, 'saved' ) ) {
 			echo '<p class="notice" role="status">' . esc_html__( 'Changes saved.', 'dexo' ) . '</p>';
 		}
-		$section['render']( $id, $is_print );
+		if ( $creating ) {
+			$section['create']();
+		} else {
+			$section['render']( $id, $is_print );
+		}
 	};
-	$body = $id && ! $is_print && in_array( $tab, array( 'orders', 'products' ), true )
+	$body = ! $is_print && ( $creating || ( $id && ( isset( $section['record_label'] ) || in_array( $tab, array( 'orders', 'products' ), true ) ) ) )
 		? static fn() => render_editor( $tab, $id, $section, $content )
 		: $content;
 	render_layout( $is_print ? __( 'Packing slip', 'dexo' ) : $section['label'], $body, $sections, $tab, $is_print );
@@ -145,6 +151,9 @@ function icon( string $name, int $size = 18 ): void {
 	$paths = array(
 		'orders' => '<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16m-11 4a3 3 0 0 0 6 0"/>',
 		'products' => '<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm8 4.5L12 12l-8-4.5m8 4.5v9M8 5.25l8 4.5"/>',
+		'posts' => '<path d="M5 3h14v18H5zm3 5h8m-8 4h8m-8 4h5"/>',
+		'pages' => '<path d="M7 3h7l5 5v13H7zm7 0v5h5M4 6v12"/>',
+		'media' => '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.5"/><path d="m3 17 5-5 3 3 4-4 6 6"/>',
 		'search' => '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>',
 		'menu' => '<path d="M4 6h16M4 12h16M4 18h16"/>',
 		'close' => '<path d="m6 6 12 12M18 6 6 18"/>',
@@ -196,8 +205,13 @@ function render_layout( string $title, callable $content, array $sections = arra
 			<span class="live-dot" aria-hidden="true"></span>
 		</div>
 		<nav aria-label="<?php esc_attr_e( 'Dashboard', 'dexo' ); ?>">
-			<?php if ( $sections ) : ?><p class="nav-label"><?php esc_html_e( 'Store', 'dexo' ); ?></p><?php endif; ?>
+			<?php $group = null; ?>
 			<?php foreach ( $sections as $slug => $section ) : ?>
+				<?php $next_group = $section['group'] ?? __( 'Store', 'dexo' ); ?>
+				<?php if ( $next_group !== $group ) : ?>
+					<p class="nav-label"><?php echo esc_html( $next_group ); ?></p>
+					<?php $group = $next_group; ?>
+				<?php endif; ?>
 				<a href="<?php echo esc_url( panel_url( array( 'tab' => $slug ) ) ); ?>"<?php echo $active === $slug ? ' aria-current="page"' : ''; ?>>
 					<?php icon( $slug, 19 ); ?>
 					<span><?php echo esc_html( $section['label'] ); ?></span>
@@ -243,11 +257,11 @@ function render_layout( string $title, callable $content, array $sections = arra
 function render_editor( string $tab, int $id, array $section, callable $content ): void {
 	$section['render']( 0, false );
 	$close = panel_url( array( 'tab' => $tab ) );
-	$label = 'orders' === $tab ? __( 'Order', 'dexo' ) : __( 'Product', 'dexo' );
+	$label = $id ? ( $section['record_label'] ?? ( 'orders' === $tab ? __( 'Order', 'dexo' ) : __( 'Product', 'dexo' ) ) ) : $section['create_label'];
 	?>
 	<dialog class="panel-dialog" id="dexo-editor" aria-labelledby="dexo-editor-title" data-return="<?php echo esc_url( $close ); ?>" open>
 		<header>
-			<h2 id="dexo-editor-title" tabindex="-1" autofocus><?php echo esc_html( $label ); ?> <bdi>#<?php echo esc_html( number_format_i18n( $id ) ); ?></bdi></h2>
+			<h2 id="dexo-editor-title" tabindex="-1" autofocus><?php echo esc_html( $label ); ?><?php if ( $id ) : ?> <bdi>#<?php echo esc_html( number_format_i18n( $id ) ); ?></bdi><?php endif; ?></h2>
 			<a class="icon-button" href="<?php echo esc_url( $close ); ?>" aria-label="<?php esc_attr_e( 'Close details', 'dexo' ); ?>"><?php icon( 'close' ); ?></a>
 		</header>
 		<div class="editor-body"><?php $content(); ?></div>
@@ -270,8 +284,8 @@ function form_error( string $message, int $status = 400 ): \WP_Error {
 	return new \WP_Error( 'dexo_form', $message, $status );
 }
 
-function submit_section( callable $submit, string $tab, int $id ): ?\WP_Error {
-	if ( ! $id || ! in_array( $tab, array( 'orders', 'products' ), true ) ) {
+function submit_section( callable $submit, string $tab, int $id ): int|\WP_Error|null {
+	if ( ! $id || ! in_array( $tab, array( 'orders', 'products', 'posts', 'pages', 'media' ), true ) ) {
 		return $submit( $id, $_POST );
 	}
 	$lock = sprintf( 'dexo_write_lock_%s_%d', $tab, $id );

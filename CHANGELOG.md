@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- Add Posts, Pages and Media sections within the Dexo workspace.
+- Create simple content, edit titles and publication status, upload images or PDFs, and edit media descriptions.
+- Apply native WordPress record-level capabilities and preserve existing block or custom-markup content through the WordPress editor link.
+
 ## 0.2.0
 
 - Bring the original light store workspace to Dexo, including the sidebar, top bar, lists, record dialogs and two-column sign-in.

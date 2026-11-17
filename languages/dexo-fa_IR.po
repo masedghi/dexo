@@ -1,11 +1,14 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.2.0\n"
+"Project-Id-Version: Dexo 0.3.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "(Untitled)"
+msgstr "(بدون عنوان)"
 
 msgid "Access restricted"
 msgstr "دسترسی محدود است"
@@ -28,6 +31,9 @@ msgstr "همهٔ محصولات"
 msgid "All statuses"
 msgstr "همهٔ وضعیت‌ها"
 
+msgid "Alternative text"
+msgstr "متن جایگزین تصویر"
+
 msgid "Amount"
 msgstr "مبلغ"
 
@@ -43,6 +49,12 @@ msgstr "از مدیر فروشگاه بخواهید یک نقش دیکسو به 
 msgid "Back to order"
 msgstr "بازگشت به سفارش"
 
+msgid "Body (text or basic HTML)"
+msgstr "محتوا (متن یا HTML ساده)"
+
+msgid "Caption"
+msgstr "کپشن"
+
 msgid "Changes saved."
 msgstr "تغییرات ذخیره شد."
 
@@ -54,6 +66,9 @@ msgstr "بستن فهرست"
 
 msgid "Connected to your store"
 msgstr "متصل به فروشگاه"
+
+msgid "Content"
+msgstr "محتوا"
 
 msgid "Customer"
 msgstr "مشتری"
@@ -85,20 +100,32 @@ msgstr "قیمت صفر یا بیشتر را بدون جداکنندهٔ هزا�
 msgid "Enter a note of up to 2,000 characters."
 msgstr "یادداشت را در حداکثر ۲۰۰۰ نویسه بنویسید."
 
+msgid "Enter a title."
+msgstr "عنوان را وارد کنید."
+
 msgid "Enter a tracking code of up to 120 characters."
 msgstr "کد رهگیری را در حداکثر ۱۲۰ نویسه وارد کنید."
 
 msgid "Enter a whole stock quantity."
 msgstr "موجودی را به‌صورت عدد صحیح وارد کنید."
 
+msgid "Enter the content in the body field."
+msgstr "متن محتوا را در کادر وارد کنید."
+
 msgid "Everything,"
 msgstr "همه‌چیز،"
+
+msgid "File type"
+msgstr "نوع فایل"
 
 msgid "Filter orders"
 msgstr "فیلتر سفارش‌ها"
 
 msgid "Find products"
 msgstr "جست‌وجوی محصولات"
+
+msgid "Image or PDF"
+msgstr "تصویر یا PDF"
 
 msgid "Internal notes"
 msgstr "یادداشت‌های داخلی"
@@ -112,6 +139,18 @@ msgstr "قلم"
 msgid "Manage your store from the first order to the final delivery."
 msgstr "از اولین سفارش تا رسیدن کالا به دست مشتری، فروشگاه را از اینجا مدیریت کنید."
 
+msgid "Media file"
+msgstr "فایل رسانه"
+
+msgid "Media library"
+msgstr "کتابخانهٔ رسانه"
+
+msgid "New page"
+msgstr "برگهٔ جدید"
+
+msgid "New post"
+msgstr "نوشتهٔ جدید"
+
 msgid "New status"
 msgstr "وضعیت جدید"
 
@@ -124,14 +163,26 @@ msgstr "سفارشی پیدا نشد."
 msgid "No products found."
 msgstr "محصولی پیدا نشد."
 
+msgid "No records found."
+msgstr "موردی پیدا نشد."
+
 msgid "Open Dexo"
 msgstr "باز کردن دیکسو"
+
+msgid "Open WordPress editor"
+msgstr "باز کردن ویرایشگر وردپرس"
+
+msgid "Open file"
+msgstr "باز کردن فایل"
 
 msgid "Open menu"
 msgstr "باز کردن فهرست"
 
 msgid "Open parent product"
 msgstr "باز کردن محصول مادر"
+
+msgid "Order"
+msgstr "سفارش"
 
 msgid "Order ID"
 msgstr "شناسهٔ سفارش"
@@ -154,14 +205,26 @@ msgstr "سفارش‌ها"
 msgid "Packing slip"
 msgstr "برگهٔ آماده‌سازی سفارش"
 
+msgid "Page"
+msgstr "برگه"
+
 msgid "Page %1$s of %2$s"
 msgstr "صفحهٔ %1$s از %2$s"
 
 msgid "Page unavailable"
 msgstr "صفحه در دسترس نیست"
 
+msgid "Pages"
+msgstr "برگه‌ها"
+
 msgid "Pagination"
 msgstr "صفحه‌بندی"
+
+msgid "Post"
+msgstr "نوشته"
+
+msgid "Posts"
+msgstr "نوشته‌ها"
 
 msgid "Previous"
 msgstr "قبلی"
@@ -199,6 +262,9 @@ msgstr "قیمت عادی برای محصولات ساده و هر مدل جدا
 msgid "SKU"
 msgstr "شناسهٔ کالا"
 
+msgid "Save changes"
+msgstr "ذخیرهٔ تغییرات"
+
 msgid "Save inventory"
 msgstr "ذخیرهٔ موجودی"
 
@@ -211,8 +277,17 @@ msgstr "ذخیرهٔ وضعیت"
 msgid "Save tracking code"
 msgstr "ذخیرهٔ کد رهگیری"
 
+msgid "Search"
+msgstr "جست‌وجو"
+
+msgid "Search by title"
+msgstr "جست‌وجو با عنوان"
+
 msgid "Search orders by ID…"
 msgstr "جست‌وجوی سفارش با شناسه…"
+
+msgid "Select an image or PDF to upload."
+msgstr "یک تصویر یا PDF برای بارگذاری انتخاب کنید."
 
 msgid "Shipment"
 msgstr "ارسال"
@@ -280,8 +355,14 @@ msgstr "این محصول موجودی جداگانه ندارد."
 msgid "This product has a sale price. Its regular price must stay above that price."
 msgstr "این محصول قیمت ویژه دارد. قیمت عادی باید از آن بیشتر باشد."
 
+msgid "This record changed. Review it and try again."
+msgstr "این مورد تغییر کرده است. آن را بررسی و دوباره تلاش کنید."
+
 msgid "This record is being updated. Try again in a moment."
 msgstr "این مورد در حال به‌روزرسانی است. چند لحظهٔ دیگر دوباره تلاش کنید."
+
+msgid "This record is unavailable."
+msgstr "این مورد در دسترس نیست."
 
 msgid "This status change is unavailable in Dexo."
 msgstr "این تغییر وضعیت در دیکسو در دسترس نیست."
@@ -291,6 +372,9 @@ msgstr "ذخیرهٔ این وضعیت موجودی ممکن نیست."
 
 msgid "This variation uses the parent product’s stock."
 msgstr "این مدل از موجودی محصول مادر استفاده می‌کند."
+
+msgid "Title"
+msgstr "عنوان"
 
 msgid "Total"
 msgstr "جمع"
@@ -303,6 +387,12 @@ msgstr "کد رهگیری"
 
 msgid "Updated in Dexo."
 msgstr "در دیکسو به‌روز شد."
+
+msgid "Upload media"
+msgstr "بارگذاری رسانه"
+
+msgid "Use the WordPress editor for this record to preserve its blocks or custom markup."
+msgstr "برای حفظ بلوک‌ها یا کد اختصاصی این محتوا، آن را در ویرایشگر وردپرس باز کنید."
 
 msgid "Variations"
 msgstr "مدل‌ها"
@@ -322,8 +412,14 @@ msgstr "ووکامرس نتوانست تغییر را ذخیره کند. محص�
 msgid "WooCommerce is required"
 msgstr "ووکامرس لازم است"
 
+msgid "WordPress could not save this record."
+msgstr "وردپرس نتوانست این مورد را ذخیره کند."
+
 msgid "You cannot make this change."
 msgstr "اجازهٔ این تغییر را ندارید."
+
+msgid "You cannot use this publication status."
+msgstr "اجازهٔ استفاده از این وضعیت انتشار را ندارید."
 
 msgid "Your form expired. Reload the page and try again."
 msgstr "اعتبار فرم تمام شده است. صفحه را تازه کنید و دوباره تلاش کنید."

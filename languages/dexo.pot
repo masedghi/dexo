@@ -1,9 +1,12 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Dexo 0.2.0\n"
+"Project-Id-Version: Dexo 0.3.0\n"
 "Report-Msgid-Bugs-To: https://github.com/masedghi/dexo/issues\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "(Untitled)"
+msgstr ""
 
 msgid "Access restricted"
 msgstr ""
@@ -26,6 +29,9 @@ msgstr ""
 msgid "All statuses"
 msgstr ""
 
+msgid "Alternative text"
+msgstr ""
+
 msgid "Amount"
 msgstr ""
 
@@ -41,6 +47,12 @@ msgstr ""
 msgid "Back to order"
 msgstr ""
 
+msgid "Body (text or basic HTML)"
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
 msgid "Changes saved."
 msgstr ""
 
@@ -51,6 +63,9 @@ msgid "Close menu"
 msgstr ""
 
 msgid "Connected to your store"
+msgstr ""
+
+msgid "Content"
 msgstr ""
 
 msgid "Customer"
@@ -83,19 +98,31 @@ msgstr ""
 msgid "Enter a note of up to 2,000 characters."
 msgstr ""
 
+msgid "Enter a title."
+msgstr ""
+
 msgid "Enter a tracking code of up to 120 characters."
 msgstr ""
 
 msgid "Enter a whole stock quantity."
 msgstr ""
 
+msgid "Enter the content in the body field."
+msgstr ""
+
 msgid "Everything,"
+msgstr ""
+
+msgid "File type"
 msgstr ""
 
 msgid "Filter orders"
 msgstr ""
 
 msgid "Find products"
+msgstr ""
+
+msgid "Image or PDF"
 msgstr ""
 
 msgid "Internal notes"
@@ -110,6 +137,18 @@ msgstr ""
 msgid "Manage your store from the first order to the final delivery."
 msgstr ""
 
+msgid "Media file"
+msgstr ""
+
+msgid "Media library"
+msgstr ""
+
+msgid "New page"
+msgstr ""
+
+msgid "New post"
+msgstr ""
+
 msgid "New status"
 msgstr ""
 
@@ -122,13 +161,25 @@ msgstr ""
 msgid "No products found."
 msgstr ""
 
+msgid "No records found."
+msgstr ""
+
 msgid "Open Dexo"
+msgstr ""
+
+msgid "Open WordPress editor"
+msgstr ""
+
+msgid "Open file"
 msgstr ""
 
 msgid "Open menu"
 msgstr ""
 
 msgid "Open parent product"
+msgstr ""
+
+msgid "Order"
 msgstr ""
 
 msgid "Order ID"
@@ -152,13 +203,25 @@ msgstr ""
 msgid "Packing slip"
 msgstr ""
 
+msgid "Page"
+msgstr ""
+
 msgid "Page %1$s of %2$s"
 msgstr ""
 
 msgid "Page unavailable"
 msgstr ""
 
+msgid "Pages"
+msgstr ""
+
 msgid "Pagination"
+msgstr ""
+
+msgid "Post"
+msgstr ""
+
+msgid "Posts"
 msgstr ""
 
 msgid "Previous"
@@ -197,6 +260,9 @@ msgstr ""
 msgid "SKU"
 msgstr ""
 
+msgid "Save changes"
+msgstr ""
+
 msgid "Save inventory"
 msgstr ""
 
@@ -209,7 +275,16 @@ msgstr ""
 msgid "Save tracking code"
 msgstr ""
 
+msgid "Search"
+msgstr ""
+
+msgid "Search by title"
+msgstr ""
+
 msgid "Search orders by ID…"
+msgstr ""
+
+msgid "Select an image or PDF to upload."
 msgstr ""
 
 msgid "Shipment"
@@ -278,7 +353,13 @@ msgstr ""
 msgid "This product has a sale price. Its regular price must stay above that price."
 msgstr ""
 
+msgid "This record changed. Review it and try again."
+msgstr ""
+
 msgid "This record is being updated. Try again in a moment."
+msgstr ""
+
+msgid "This record is unavailable."
 msgstr ""
 
 msgid "This status change is unavailable in Dexo."
@@ -288,6 +369,9 @@ msgid "This stock status cannot be applied."
 msgstr ""
 
 msgid "This variation uses the parent product’s stock."
+msgstr ""
+
+msgid "Title"
 msgstr ""
 
 msgid "Total"
@@ -300,6 +384,12 @@ msgid "Tracking code"
 msgstr ""
 
 msgid "Updated in Dexo."
+msgstr ""
+
+msgid "Upload media"
+msgstr ""
+
+msgid "Use the WordPress editor for this record to preserve its blocks or custom markup."
 msgstr ""
 
 msgid "Variations"
@@ -320,7 +410,13 @@ msgstr ""
 msgid "WooCommerce is required"
 msgstr ""
 
+msgid "WordPress could not save this record."
+msgstr ""
+
 msgid "You cannot make this change."
+msgstr ""
+
+msgid "You cannot use this publication status."
 msgstr ""
 
 msgid "Your form expired. Reload the page and try again."
